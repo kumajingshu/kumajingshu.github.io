@@ -181,7 +181,8 @@ a.active {
   color:white;
 }
 header{
-	background-color:#C3D7D8;
+	/*background-color:rgba(152,211,222,0.6);*/
+  background-color: #FAFAFA
 }
 .name h1{
 	font-family: 'Montserrat', sans-serif;
