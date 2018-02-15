@@ -73,8 +73,8 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding-top: 30%;
+  padding-bottom: 0px;
 }
 header img {
   display: block;
@@ -93,8 +93,8 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
-    padding-bottom: 100px;
+    padding-top: 10%;
+    padding-bottom: 0;
   }
   header .intro-text .name {
     font-size: 4.75em;
