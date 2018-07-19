@@ -11,6 +11,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
     <link rel="shortcut icon" href="img/portfolio/logoimage.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
@@ -115,10 +116,11 @@
         <!--/div>
         <!-- /.container-fluid -->
     <!--/nav-->
-    <header id="header" style="background-color:#97DDE9">
-        <div id="bgwrap" class="clearfix">
+    <header id="header" style="background-color:#FFFFFF">
+        <div class="header_bg"></div>
+        <!--div id="bgwrap" class="clearfix">
             <div id="gloss"></div>
-            <!--div class="container">
+            <div class="container">
             	<div class="d-flex flex-md-row">
             		<div>
             			<h1>SHRINE Data Steward Application</h1>
@@ -131,17 +133,16 @@
             </div>
          </div>
             <!--img class="card-img" src="img/overlays/allergybg.jpg" alt="Card image" style="max-height:760px;background-position:top"-->
-            <div class="container" style="padding-top:15%;padding-bottom:10%">
+            <div class="header_bg" style="background-color:#E3E4FF"></div>
+            <div class="container" style="padding-top:10%;">
                 <div class="row align-items-center">
-                	<div class="col-md-5" style="padding:0.5%">
-                        <h1>SHRINE<br>Data Steward App</h1>
+                	<div class="col-md-7" style="padding:10%">
+                        <h1 class="projectname_page">SHRINE<br>Data Steward</h1>
                         <h2 class="projectintro" >A Web application for identifying malicious use of patient data</h2>
-                        <p class="brief" style="margin-top:1rem">Internship Project in Harvard Catalyst</p>
-                        <!--button type="button" class="btn btn-keyword" style="border-radius: 1rem; background-color:transparent; border:2px solid #fff; color:#fff">Wireframe</button-->
-                        <p class="strong brief"><strong style="color:white">Interview, Wireframing, Interaction Design, Usability Test</strong></p>
+                        <p class="strong brief" style="color:#333333"><strong>Interaction Design &#124; UX Research</strong></p>
                     </div>
-                    <div class="col-md-7" style="background-color:transparent;padding:0.5%">
-                        <img class="card-img" src="img/portfolio/dsa-pic/datasteward2.png" alt="Card image" style="width:90%">
+                    <div class="col-md-5" style="background-color:transparent;padding:0.5%">
+                        <img class="card-img" src="img/portfolio/dsa-pic/datasteward2.png" alt="Card image" style="width:110%;padding-top:3rem">
                     </div>
                 </div>
                 <!--div class="row">
@@ -194,7 +195,7 @@
             </div>
         </div>
     </section>    
-    <section style="background-color:#FAFAFA">
+    <section style="background-color:#f8faff">
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
@@ -218,12 +219,12 @@
             <div class="row">
                 <div class="col-md-10">
                     <p class="strong">What are the malicious query behavior a Data Steward needs to find when using Data Steward Application?</p>
-                    <ol>
+                    <ul class="liststyle">
                         <li><strong class="sub-title">Off-topic terms:</strong> The terms used to build queries are not consistent with the query topic</li>
                         <li><strong class="sub-title">Sensitive terms:</strong> Disease, such as HIV and abortion, usually should not be queried</li>
                         <li><strong class="sub-title">Re-identification:</strong> A user may re-identify a specific patient with a rare condition by using same terms repeatedly in over 15 queries.</li>
                         <li><strong class="sub-title">Bot-attack: </strong>If a bot attacks the system, there will be many queries in one minute from the same user.</li>
-                    </ol>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -231,13 +232,13 @@
     <section class="secbg" >
         <div class="container">
         	<div class="row">
-        		<div class="col-md-6">
+        		<div class="col-md-10">
                     <h3>Challenge</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <ul class="liststyle2">
+                    <ul class="liststyle">
                         <li>The information in the previous Data Steward Application (DSA) was not sufficient for decision making.</li>
                         <li>Usability issues existed in the previous DSA without the involvement of UX in the development.</li>
                         <li>The users had limited experience and knowledge, because the role of Data Steward (DS) is new.</li>
@@ -256,10 +257,10 @@
             </div-->
 		</div>
 	</section>
-    <section id="approach" style="background-color:#FAFAFA">
+    <section id="approach" style="background-color:#f8faff">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>Approach</h3>
                 </div>
             </div>
@@ -278,7 +279,7 @@
     <section id="research" class="secbg" >
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>Research</h3>
                 </div>
             </div>
@@ -366,7 +367,7 @@
                                 <li class="quotes">Interviewee 1: "I can see what was searched for this topic, but can’t see what was actually searched per query. I want to see individual query (including terms and booleans) with the categories."</li>
                                 <li class="quotes">Interviewee 4: "Current, DSA is structured per user, per topic. I would like a way to quickly look across users, to focus on sensitive terms or small numbers of results."</li>
                             </ul-->
-                        <li>DSs needed more functions to flag suspicious users or share users’ queries with other DSs.</li>
+                        <li>DSs needed more functions to flag suspicious users or share users’ queries.</li>
                             <!--ul> 
                                 <li class="quotes">Interviewee 3: "We should be able to flag them if someone is misusing the query tool. But I am not."</li>
                                 <li class="quotes">Interviewee 3: "The DS is supposed to share something suspicious with someone else with more knowledge."</li>
@@ -377,17 +378,18 @@
             <div class="row align-items-start"> 
                 <div class="col-md-10" style="margin-bottom:0rem">
                     <h4>Persona</h4>   
-                    <p>Based on the findings above, I built personas to identify users' pain points and needs.</p> 
-                </div>                      
-                <div class="col-md-5 image-row" style="margin-top:0rem">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.png" alt="persona1">
-                    </a>
-                </div>
-                <div class="col-md-5 image-row" style="margin-top:0rem">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona2.png" alt="persona2">
-                    </a>
+                    <p>Based on the findings above, I built personas to identify users' pain points and needs.</p>
+                    <div class="row">
+                            <div class="col-md-6 image-row" style="margin-top:0rem;width:50%">
+                            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                                <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.png" alt="persona1">
+                            </a>
+                        </div>
+                        <div class="col-md-6 image-row" style="margin-top:0rem;width:50%">
+                            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                                <img class="card-img" src="img/portfolio/dsa-pic/ds-persona2.png" alt="persona2">
+                            </a>
+                        </div>
                 </div>
             </div>
             <!--div class="row dsa-table">
@@ -445,10 +447,10 @@
             </div-->
         </div>
     </section>
-    <section style="background-color:#FAFAFA">
+    <section style="background-color:#f8faff">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>User Journey</h3>
                 </div>
             </div>
@@ -484,10 +486,10 @@
             </div>
         </div>
     </section>
-    <section id="ideation" class="secbg" style="background-color:#FAFAFA">
+    <section id="ideation" class="secbg" style="background-color:#f8faff">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>Ideation</h3>
                 </div>
             </div>
@@ -575,12 +577,7 @@
                 <div class="col-md-10">
                     <h5>Solution</h5>
                     <ul class="liststyle">
-                        <li class="strong">Display the number of queries for each researcher's each query topic.</li>
-                    </ul>
-                    <ul>
-                        <ul class="non-bullet">
-                            <li>Users can first review a researcher whose query topic has larger number of queries which may indicate re-identification or Bot Attack.</li>
-                        </ul>
+                        <li><strong>Display the number of queries for each researcher's each query topic.</strong><div>Users can first review a researcher whose query topic has larger number of queries which may indicate re-identification or Bot Attack.</div></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
@@ -617,12 +614,7 @@
                 <div class="col-md-10">
                     <h5>Solution</h5>
                     <ul class="liststyle">
-                        <li class="strong">Display query frequency and category of query terms in a table view (aggregate viewer).</li>
-                    </ul>
-                    <ul>
-                        <ul class="non-bullet">
-                            <li>The sequence of the terms is 1st level category - 2nd level category - 3rd level category - query term in alphabetic order so that the structure of categories can be displayed clearly.</li>
-                        </ul>
+                        <li><strong>Display query frequency and category of query terms in a table view.</strong><div>The sequence of the terms is 1st level category - 2nd level category - 3rd level category - query term in alphabetic order so that the structure of categories can be displayed clearly.</div></li>
                     </ul>
                 </div>
             </div>
@@ -644,7 +636,7 @@
             <div class="row">
                 <div class="col-md-10">
                     <h5>Problem</h5>
-                    <p>The Data Stewards hope to see how queries are built in SHRINE query tool to find re-identification. The previous Data Steward Application did not provide this important information.</p>
+                    <p>The Data Stewards hope to see how queries are built in SHRINE query tool to find re-identification, which cannot be done with the previous Data Steward Application.</p>
                 </div>
             </div>
             <div class="row image-row2">
@@ -665,22 +657,9 @@
                 <div class="col-md-10">
                     <h5>Solution</h5>
                     <ul class="liststyle">
-                        <li class="strong">Present the terms in the way (query viewer) how they build queries in SHRINE query tool, which DSs are familiar with.</li>
-                    </ul>
-                    <ul>
-                        <ul class="non-bullet">
-                            <li class="non">The boolean between each column is “OR” and the boolean within a cell is “AND”. The modifier means the criteria, such as date range of hospital visit, number of occurrences.</li>
-                        </ul>
-                    </ul>
-                    <ul class="liststyle">
-                        <li class="strong">Provide a search box to highlight a term.</li>
-                    </ul>
-                    <ul>
-                        <ul class="non-bullet">
-                            <li>Users can search for and highlight a frequently used term, and see how that term is used with other terms across queries.</li>
-                            <li>Users can find re-identification by seeing a specific pattern in the usage of that term.</li>
-                        </ul>
-                    </ul>    
+                        <li><strong>Present the terms in the way (query viewer) how they build queries in SHRINE query tool, which DSs are familiar with.</strong><div>The boolean between each column is “OR” and the boolean within a cell is “AND”. The modifier means the criteria, such as date range of hospital visit, number of occurrences.</div></li>
+                        <li><strong>Provide a search box to highlight a term.</strong><div>Users can search for and highlight a frequently used term, and see how that term is used with other terms across queries.</div><div>Users can find re-identification by seeing a specific pattern in the usage of that term.</div></li>
+                    </ul>  
                 </div>
             </div>
             <div class="row image-row2">
@@ -758,20 +737,20 @@
             </div-->
         </div>
     </section>
-    <section id="usabilitytest" class="secbg" style="background-color:#FAFAFA">
+    <section id="usabilitytest" class="secbg" style="background-color:#f8faff">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3>Usability Test</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10">
-                    <p>I conducted usability tests with Interviewee 3 and Interviewee 4 I interviewed in the first round.</p>
-                    <ul>
+                    <p>I conducted usability tests with Interviewee 3 and Interviewee 4 I interviewed in the first round.<!--/p>
+                    <!--ul>
                         <li type=none>Based on initial interviews, Interviewee 3 and 4 seemed most likely to perform the work of a Data Steward. Interviewee 1 and 2 provided valuable input on the Data Steward role itself, but they might not work as a data steward considering they are director/manager roles in their organization.</li>
                     </ul>
-                    <p>I created interactive prototypes and observed how they reviewed the queries and whether they could identify malicious behavior. </p>
+                    <p--> I created interactive prototypes and observed how they reviewed the queries and whether they could identify malicious behavior. </p>
                 </div>
             </div>
             <div class="row">
@@ -793,7 +772,7 @@
                             <li>“All Query Topics” tab: They could not see the value of it.</li>
                             <li>Flag a topic: They hoped to flag both of a researcher and a  topic.</li>
                             <!--li>The blank flag: One DS thought it indicates malicious behavior.</li-->
-                            <li>The sequence of query terms in the aggregate viewer: it should be sorted by frequency.</li>
+                            <li>The sequence of query terms in the aggregate viewer: sort by frequency.</li>
                         </ul>
                     </ul>
                     <p class="strong">The difficulties they meet when finding malicious behavior reflect that they need more training.</p>
@@ -932,10 +911,10 @@
             </div-->
         </div>
     </section>
-    <section id="take-aways" class="secbg" style="background-color:#FAFAFA;">
+    <section id="take-aways" class="secbg" style="background-color:#f8faff;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-10">
                     <h3 >Take-aways</h3>
                 </div>
             </div>
@@ -948,7 +927,7 @@
             </div>
         </div>
     </section>
-    <section id="portfolio">
+    <!--section id="portfolio">
         <div class="container" style="margin-top:5rem">
             <div class="row">
                 <div class="col-md-10">
@@ -1001,7 +980,7 @@
                                 <img class="card-img" src="img/portfolio/eatogether-new.png" alt="Card image cap">
                             </a>
                         </div-->
-                        <div class="col-sm-4 portfolio-item">
+                        <!--div class="col-sm-4 portfolio-item">
                             <a href="autodesk.html" class="portfolio-link">
                                 <div class="caption">
                                     <div class="caption-content">
@@ -1016,24 +995,109 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section-->
     <section id="divmenu-hide">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 ml-auto col-xs-0">
                     <nav class="nav flex-column contents" id="divmenu">
-                        <h3>Contents</h3>
                         <a class="nav-link" href="#main">Introduction</a>
-                        <a class="nav-link" href="#approach">Approach</a>
                         <a class="nav-link" href="#research">Research</a>
                         <a class="nav-link" href="#define">Scope</a>
                         <a class="nav-link" href="#ideation">Ideation</a>
                         <a class="nav-link" href="#design1">Design (round 1)</a>
                         <a class="nav-link" href="#usabilitytest">Usability Test</a>
                         <a class="nav-link" href="#design2">Design (round 2)</a>
-                        <a class="nav-link" href="#take-aways">Take-aways</a>
-                        <a class="nav-link" href="#portfolio">More Works</a>
                     </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container" style="margin-top:5rem;">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="text-center">More Works</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row">
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="amesite.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/amesite_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Amesite</h5>
+                        <p>iOS Mobile App Design</p>
+                    </div>
+                </div>
+                    <!--/div-->
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="datasteward.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">SHRINE Data Steward</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Web App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/shrine_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>SHRINE Data Steward</h5>
+                        <p>Web App Research &amp; Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="allergybot.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">AllergyBot</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Chatbot</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/allergybot_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>AllergyBot</h5>
+                        <p>Chatbot Research &amp; Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="2ndbrain.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/2ndbrain_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>2ndBrain</h5>
+                        <p>iOS Mobile App Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="graphic-design.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Graphic Design</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/graphic_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Graphic Design</h5>
+                    </div>
                 </div>
             </div>
         </div>
