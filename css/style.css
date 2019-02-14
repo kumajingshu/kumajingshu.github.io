@@ -326,12 +326,16 @@ h4,h5{
   font-weight:400;
 
 }
+h5{
+  font-size:1.3rem;
+}
 .h5title{
   margin-top:1.75rem;
   margin-bottom:1rem;
   border-left:#5e7bf1 3px solid;
   padding-left:1rem;
   font-weight:600;
+  font-size:1.4rem;
 }
 .contentcontainer h4
 {

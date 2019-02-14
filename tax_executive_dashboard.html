@@ -162,9 +162,7 @@
             </div>
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
-                    <p>The complexity of tax preparation is a pain for everyone. Managing the corporate tax is far more challenging for a Tax Executive of a multinational company. My client of this project would like to build a platform to bring transparency and efficiency of corporate tax reporting.</p>
-                    <p>As part of this large initiative, my task focused on designing a dashboard to help the user, Tax Executive, to obtain the visibility of the status of their numerous tax obligations and gain insights into their global tax position.</p>
-                    <p style="font-style:italic">For confidentiality reasons, this portfolio piece only introduces the key features and screen briefly.</p>
+                    <p>The complexity of tax preparation is a pain for everyone. Managing the corporate tax is far more challenging for a Tax Executive of a multinational company. My client of this project would like to design a Tax Executive Dashboard as part of a platform to bring transparency and efficiency of corporate tax reporting.</p>
                 </div>
             </div>
             <div class="row justify-content-md-center">
@@ -196,32 +194,81 @@
         <div class="container" id="intro">
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
-                    <h3>User & Challenge</h3>
+                    <h3>The Ask</h3>
                 </div>
             </div>
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
-                    <p>Debra is a busy Tax VP in a multinational corporation, which owns branches all over the US and the world. Each branch needs to pay the state tax or tax in another country, which makes tracking the progress of the tax preparation in each state and understanding the global tax payment challenging.</p>
+                    <p>The dashboard needs to demonstrate the capabilities of real-data sharing, transparency, visibility and easy collaboration.</p>
                     <ul class="liststyle">
-                        <li>How might we help Debra identify problems during the process of the tax preparation as soon as possible to avoid missing a due date?</li>
-                        <li>How might we provide clear data visualizations to get insight into tax payment?</li>
+                        <li>Provide a high-level overview for the user to understand the whole picture and identify the problem rather than the showing detailed tasks</li>
+                        <li>Demonstrate the capability of analyzing global tax payment with data visualization</li>
+                        <li>Be consistent with the new design of the platform for Tax Service Provider</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="overview">
+    <section>
+        <div class="container" id="intro">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Meet the Persona</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <img src="img/portfolio/tax/debra.png" style="border-radius: 50%;width:80%">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Debra is a busy Tax VP in a multinational corporation which needs to pay tax over the states and the world. Tracking the progress of numerous tax preparation is always challenging for her.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">Needs</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="liststyle">
+                        <li>Gain a high-level and clear overview of the real-time status and issues as an executive</li>
+                        <li>Identify the issues during tax preparation timely so that no due date will be missed.</li>
+                        <li>Understand the tax payment across different regions and its change in the recent 2 years</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">Behavior</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="liststyle">
+                        <li>View the tax obligations based on the due date</li>
+                        <li>View the tax preparation in their workflow, which includes 4 steps: data collection, preparation, review, and complete</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="overview" style="background-color:#f8faff">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-md-10">
                     <h3>Design Overview</h3>
                 </div>
             </div>
-            <div style="margin-left:0.5rem" class="row justify-content-md-center">
+            <!--div style="margin-left:0.5rem" class="row justify-content-md-center">
                 <div class="col-md-11">
                     <p>The design aims for helping the busy Tax Executive identify the reason for a delay during tax preparation in one view.</p>
                 </div>
-            </div>
+            </div-->
             <div class="row justify-content-md-center align-items-center">
                 <div class="col-md-4">
                     <h5 class="h5title">Overview - Pie Chart</h5>
@@ -234,7 +281,43 @@
                     <p>Provide insights about the comparison between 2 years and between the actual and statutory rate with bar charts</p>
                 </div>
                 <div class="col-md-7">
-                    <img class="card-img" src="img/portfolio/tax/tax.gif" alt="newsfeed" style="background-position:top">
+                    <img class="card-img" src="img/portfolio/tax/new_tax_dashboard.png" alt="newsfeed" style="background-position:top">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="iteration" class="secbg">
+        <div class="container">
+                 <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Iteration</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-md-6" style="margin-top:1rem;margin-left:-0.5rem">
+                            <p style="margin-bottom:0.5rem"><strong>Table View</strong></p>
+                            <ul class="liststyle">
+                                <li><strong>Pro</strong><br>Show both high-level and the exact problems in one view</li>
+                                <li><strong>Con</strong><br>Not effective in some edge cases, eg. when there is 0 overview or when there are many problematic obligations</li>
+                            </ul>
+                            <p style="margin-bottom:0.5rem"><strong>Chart View</strong></p>
+                            <ul class="liststyle">
+                                <li><strong>Pro</strong><br>Show a whole picture of obligations in each stages; bring connectivity to the existing information in obligation tab</li>
+                                <li><strong>Con</strong><br>Need to drill down to another page to show details (viewing details is not a priority for target user)</li>
+                                <li><strong>From chevron to timeline</strong><br>More simplified visually</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6" style="padding-left:2%;padding-right:2%;">
+                            <img class="card-img image-row" src="img/portfolio/tax/v1.png" alt="Before: The existing design">
+                            <p class="image_text2">V1: Table View</p>
+                            <img class="card-img image-row" src="img/portfolio/tax/v2.png" alt="Before: The existing design">
+                            <p class="image_text2">V2: Chart View - Chevron</p>
+                            <img class="card-img image-row" src="img/portfolio/tax/v3.png" alt="Before: The existing design">
+                            <p class="image_text2">V3: Chart View - Timeline</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
