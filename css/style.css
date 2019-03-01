@@ -275,7 +275,8 @@ font-weight:700;}
 h3{
   margin-bottom: 2rem;
   font-family:'Lato','Open Sans', sans-serif;
-  text-align:center
+  text-align:center;
+  font-size:2em;
 }
 h2{
   color:#62CBD5;
