@@ -338,7 +338,7 @@ h4,h5{
 h5{
   font-size:1.3rem;
   font-weight:600;
-  line-height: 1.8rem
+  line-height: 2rem
 }
 .h5title{
   margin-top:1.75rem;
@@ -785,7 +785,7 @@ h1{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:700;}
 h1.projectname_page{text-transform: none}
 header h2{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:300;}
 h2.projectintro{
-  font-family:'Lato',sans-serif;font-size:1.25rem;color:#333333;font-weight:400;margin-top:-1rem;margin-bottom:-0.5rem;
+  font-family:'Lato',sans-serif;font-size:1.3rem;color:#333333;font-weight:600;margin-top:0rem;margin-bottom:0rem;
 }
 .display-4{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:700;}
 header.bg-header{
@@ -821,7 +821,7 @@ header.b2-header h2{
     background-color:#5e7bf1;
     border-color:#5e7bf1; }
 .brief{
-  color:#333333;font-size:1.05rem;line-height:1rem;font-weight:300;
+  color:#333333;font-size:1.05rem;line-height:1rem;font-weight:400;
 }
 table {
 table-layout: fixed;
