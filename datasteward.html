@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h3>Background</h3>
+                    <h3>Challenge</h3>
                 </div>
             </div>
             <div class="row">
@@ -209,24 +209,35 @@
                     <div class="row">
                         <div class="col-sm-5 ml-auto text-center">
                             <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/researcher.png" alt="Medical Researcher" style="width:50%">
-                            <p><strong class="sub-title">Medical researcher</strong><br>Build queries with terms under query topics in SHRINE query tool</p>
+                            <p class="image_text"><strong class="sub-title">Medical researcher</strong><br>Build queries with terms under query topics in SHRINE query tool</p>
                         </div>
                         <div class="col-sm-5 mr-auto text-center">
                             <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/ds.png" alt="Data Steward" style="width:50%">
-                            <p><strong class="sub-title">Data Steward</strong><br>Review researchers’ query with Data Steward Applicaion</p>
+                            <p class="image_text"><strong class="sub-title">Data Steward</strong><br>Review researchers’ query with Data Steward Applicaion</p>
                         </div>
                     </div>  
                 </div>
             </div>
+            <!--div class="row">
+                <div class="col-md-10">
+                    <h5>How can we help the Data Steward identify malicious query behavior?</h5>
+                </div>
+            </div-->
+            <div class="row">
+                <div class="col-md-10 text-center">
+                    <h5 style="margin:2rem">How can we help the Data Steward identify malicious query behavior?</p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-10">
-                    <p class="strong">What are the malicious query behavior a Data Steward needs to find when using Data Steward Application?</p>
+                    <p>Here are some types of typical malicious query:</p>
                     <ul class="liststyle">
-                        <li><strong class="sub-title">Off-topic terms:</strong> The terms used to build queries are not consistent with the query topic.</li>
-                        <li><strong class="sub-title">Sensitive terms:</strong> Disease, such as HIV and abortion, usually should not be queried.</li>
-                        <li><strong class="sub-title">Re-identification:</strong> A user may re-identify a specific patient with a rare condition by using same terms repeatedly in over 15 queries.</li>
-                        <li><strong class="sub-title">Bot-attack: </strong>If a bot attacks the system, there will be many queries in one minute from the same user.</li>
+                        <li><!--strong class="sub-title"-->Off-topic terms:<!--/strong--> the terms used to build queries are not consistent with the query topic.</li>
+                        <li><!--strong class="sub-title"-->Sensitive terms:<!--/strong--> disease, such as HIV and abortion, usually should not be queried.</li>
+                        <li><!--strong class="sub-title"-->Re-identification:<!--/strong--> a user may re-identify a specific patient with a rare condition by using same terms repeatedly in over 15 queries.</li>
+                        <li><!--strong class="sub-title"-->Bot-attack: <!--/strong-->if a bot attacks the system, there will be many queries in one minute from the same user.</li>
                     </ul>
+                    <p>There was an existing Data Steward Application (DSA). However, the information there was not enough for decision making and there were usability issues due to the lack of UX involvement in development. Also, the users had limited experience and knowledge because the rold of Data Steward (DS) was new.</p>
                 </div>
             </div>
         </div>
@@ -235,11 +246,14 @@
         <div class="container">
         	<div class="row">
         		<div class="col-md-10">
-                    <h3>Challenge</h3>
+                    <h3>Solution Overview</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                        </div>
                     <ul class="liststyle">
                         <li>The information in the previous Data Steward Application (DSA) was not sufficient for decision making.</li>
                         <li>Usability issues existed in the previous DSA without the involvement of UX in the development.</li>
@@ -579,7 +593,8 @@
                 <div class="col-md-10">
                     <h5>Solution</h5>
                     <ul class="liststyle">
-                        <li><strong>Display the number of queries for each researcher's each query topic.</strong><div>Users can first review a researcher whose query topic has larger number of queries which may indicate re-identification or Bot Attack.</div></li>
+                        <li><strong>Display the number of queries for each researcher's each query topic.</strong></li>
+                        <div class="list-p"><p>Users can first review a researcher whose query topic has larger number of queries which may indicate re-identification or Bot Attack.</p></div>
                     </ul>
                 </div>
                 <div class="col-md-10">
@@ -616,7 +631,8 @@
                 <div class="col-md-10">
                     <h5>Solution</h5>
                     <ul class="liststyle">
-                        <li><strong>Display query frequency and category of query terms in a table view.</strong><div class="list-p">The sequence of the terms is 1st level category - 2nd level category - 3rd level category - query term in alphabetic order so that the structure of categories can be displayed clearly.</div></li>
+                        <li><strong>Display query frequency and category of query terms in a table view.</strong></li>
+                        <div class="list-p"><p>The sequence of the terms is 1st level category - 2nd level category - 3rd level category - query term in alphabetic order so that the structure of categories can be displayed clearly.</p></div>
                     </ul>
                 </div>
             </div>
