@@ -24,10 +24,10 @@ li{
   text-indent:-1.5rem;
   margin-left:1.5rem;
 }
-.list-p
-{margin-top:-1rem;}
+
 .list-p p{
-  margin-bottom:0.5rem;
+  margin-top:-1rem;
+  margin-bottom:1rem;
 }
 .projectnav{padding:0px 0;
 margin-bottom:0;}
