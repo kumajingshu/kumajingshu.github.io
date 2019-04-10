@@ -25,7 +25,10 @@ li{
   margin-left:1.5rem;
 }
 .list-p
-{margin-top:-0.5rem;}
+{margin-top:-1rem;}
+.list-p p{
+  margin-bottom:0.5rem;
+}
 .projectnav{padding:0px 0;
 margin-bottom:0;}
 a,
@@ -941,8 +944,10 @@ button{
   font-style: italic
 }
 .image_text{
-text-align:center;
+text-align:left;
 margin-top:1rem;
+margin-left:0.5rem;
+margin-right:0.5rem;
 font-size:1rem;
 line-height: 1.5rem}
 .image_text2{
