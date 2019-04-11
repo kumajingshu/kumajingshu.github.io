@@ -895,11 +895,10 @@ button{
   margin-bottom:0.5rem;
 }
 .itemtext{
-  text-align:center;
+  text-align:left;
 }
 .itemtext p{
-  margin:-0.5rem;
-  font-size:1.05rem;
+  font-size:1rem;
 }
 
 .header_bg {

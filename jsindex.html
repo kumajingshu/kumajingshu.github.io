@@ -33,7 +33,6 @@
             display:grid;
             max-width:980px;
             margin:0 auto;
-            position:relative;
         }
         .one{
             grid-column:1/2;
@@ -65,9 +64,43 @@
             grid-row:3/4;
         }
         #content div{
-            background:#333;
-            padding:30px;
+            padding:1%;
         }
+        .intro{
+          background-color:transparent;
+          width: 100%;
+          margin-left: 0;
+          position: relative;
+          clear: both;
+          display: block;
+          padding:20px;
+        }
+        .caption {  
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top:0px;
+          right:0px;
+          transition: all ease 0.5s;
+          -webkit-transition: all ease 0.5s;
+          -moz-transition: all ease 0.5s;
+        }
+        .caption .itemtext {
+          position: absolute;
+          height: 20px;
+          text-align: left;
+          right: 5%;
+          top:40%;
+          margin-top: -10px;
+        }
+        .caption h5{
+            font-size:1.2rem;
+            line-height:0.5rem;
+        }
+         .caption .itemtext_small {
+          left: 5%;
+          top:70%;
+          margin-top: -10px;
     </style>
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="5">
@@ -132,10 +165,39 @@
                 </div>
         		<div class="two" style="background-image: url('img/portfolio/mint2.png');background-size:contain;background-position: center center;">2</div>
         		<div class="three" style="background-image: url('img/portfolio/mint2.png');background-size:contain;background-position: center center;">3</div>
-        		<div class="four" style="background-image: url('img/portfolio/ab2.png');background-size:cover;background-position: center center;">4</div>
+        		<div class="four graphic intro">
+                    <a href="graphic-design.html">
+                        <div class="caption">
+                            <div class="itemtext itemtext_small">
+                                <h5>Allergy Bot</h5>
+                                <p>UX Design &amp; Research&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Data Security</p>
+                            </div>
+                        </div>
+                        <img class="card-img" src="img/portfolio/ab2.png" alt="Card image cap">
+                    </a>
+                </div>
                 <div class="five" style="background-image: url('img/portfolio/ds2.png');background-size:contain;background-position: center center;">5</div>
-                <div class="six" style="background-image: url('img/portfolio/ds2.png');background-size:contain;background-position: center center;">6</div>
-                <div class="seven" style="background-image: url('img/portfolio/graphic_index.png');background-size:contain;background-position: center center;">7</div>
+                <div class="six graphic intro" style="background-color:#E3E4FF">
+                    <a href="graphic-design.html">
+                        <div class="caption">
+                            <div class="itemtext">
+                                <h5>SHRINE Data Steward</h5>
+                                <p>UX Design &amp; Research&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Data Security</p>
+                            </div>
+                        </div>
+                        <img class="card-img" src="img/portfolio/ds2.png" alt="Card image cap">
+                    </a>   
+                </div>
+                <div class="seven graphic" style="background-image: url('img/portfolio/graphic_index.png');background-size:contain;background-position: center center;">
+                    <a href="graphic-design.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Graphic Design</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/graphic_index.png" alt="Card image cap">
+                    </a>
+                </div>
         	</div>
         </div>
     </section>    
