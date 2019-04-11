@@ -784,7 +784,7 @@ text-align:center;
   top:-0.14em;
   left:10px;
 }
-h1{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:700;line-height:1.2;}
+h1{font-family: 'Ubuntu', sans-serif;font-weight:700;line-height:1.2;}
 h1.projectname_page{text-transform: none}
 header h2{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:300;}
 h2.projectintro{

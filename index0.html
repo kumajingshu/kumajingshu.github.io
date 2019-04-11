@@ -22,8 +22,8 @@
     <link href="css/freelancer.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/homepage.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body data-spy="scroll" data-target="#navigation" data-offset="5">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light hnav" id="navigation">
@@ -54,9 +54,10 @@
         <div class="container">
             <div class="row align-items-center" style="margin-top:2rem;margin-bottom:1rem">
                 <div class="col-md-10">
-                    <h1 class="display-5" style="text-transform: none"><span style="color:#5E7BF1">Hi, </span><span style="font-weight:500">I am Jingshu Zhao</span></h1>
-                    <h2 class="lead" style="font-size:1.6rem;font-family:'Ubuntu', sans-serif;"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></h2>
-                    <p class="self-intro">I am passionate about solving complex problems and building products to make people's work and life easier. I design with the empathy and curiosity brought from my previous career as a journalist.</p>
+                    <h1 class="display-5" style="color:#333333;text-transform: none"><span style="color:#5E7BF1">Hi, </span><span style="font-weight:500">I am Jingshu Zhao</span></h1>
+                    <h2 class="lead" style="font-size:1.6rem;font-family:'Ubuntu', sans-serif;color:#333333"><span id='text'></span><div class='console-underscore' id='console' style="color:#333333">&#95;</div></h2>
+                    <p style="font-size:1.2rem;color:#333333;margin-top:2rem;margin-right:6rem">I design with the empathy brought from my previous career as a journalist. My work experience focused on transforming complex data and workflow into intuitive interface and solving problems with design thinking.</p>
+                    <p style="font-size:1.2rem;color:#333333;margin-top:-0.5rem;margin-bottom:0.5rem"></p>
                 </div>
                 <!--div class="col-md-5">
                     <img class="card-img align-bottom" src="img/portfolio/jingshu-vector.png" alt="Card image cap" style="width:75%;vertical-align:bottom;margin:auto;">
@@ -80,87 +81,141 @@
     </header>
     <section id="portfolio" style="padding-top:3%">
         <div class="container">
-        	<div id="content">
-        		<div1 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="amesite.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Amesite</h5>
-                                <p>Social Learning&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Mobile App<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp; Product Design--></p>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="amesite.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
                             </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/amesite2.png" alt="Card image cap">
+                        </div-->
+                        <img class="card-img" src="img/portfolio/amesite_index.png" alt="Card image cap">
                     </a>
-                </div1>
-                <div2 class="graphic intro" style="background-color:#E3E4FF">
-                    <a href="datasteward.html">
-                        <div class="caption">
-                            <div class="itemtext">
-                                <h5>SHRINE Data Steward</h5>
-                                <p>Clinical Data Security&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Web App<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Design &amp; Research--></p>
+                    <div class="itemtext">
+                        <h5>Amesite</h5>
+                        <p>Product Design&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Social Learning</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="datasteward.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">SHRINE Data Steward</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Web App</span>
                             </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/ds2.png" alt="Card image cap">
-                    </a>   
-                </div2>
-                <div3 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="mint.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Mint</h5>
-                                <p>Fintech&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Product Redesign</p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/mint2.png" alt="Card image cap">
-                    </a>  
-                </div3>
-                <div4 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="2ndbrain.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>2ndBrain</h5>
-                                <p>Medication Adherence &nbsp;&nbsp;&verbar;&nbsp;&nbsp;Mobile App</p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/2ndbrain2.png" alt="Card image cap">
+                        </div-->
+                        <img class="card-img" src="img/portfolio/shrine_index.png" alt="Card image cap">
                     </a>
-                </div4>
-                <div5 class="graphic intro" style="background-color:#FFDDE4">
-                    <a href="allergybot.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Allergy Bot</h5>
-                                <p>Chatbot&nbsp;&nbsp;&verbar;&nbsp;&nbsp;CHI Finalist</p>
+                    <div class="itemtext">
+                        <h5>SHRINE Data Steward</h5>
+                        <p>UX Design &amp; Research&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Data Security</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="mint.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
                             </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/ab2.png" alt="Card image cap">
-                    </a>   
-                </div5>
-                <div6 class="graphic intro" style="background-color:#E3E4FF">
-                    <a href="tax_executive_dashboard.html">
-                        <div class="caption">
-                            <div class="itemtext">
-                                <h5>Tax Executive Dashboard</h5>
-                                <p>Enterprise&nbsp;&verbar;&nbsp;Workflow&nbsp;&verbar;&nbsp;Data</p>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/mint_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Mint Redesign</h5>
+                        <p>Product Design&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Fintech</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="tax_executive_dashboard.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
                             </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/tax2.png" alt="Card image cap">
-                    </a>   
-                </div6>
-                <div7 class="graphic intro" style="background-color:#FCF6DE">
+                        </div-->
+                        <img class="card-img" src="img/portfolio/tax/tax_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Tax Executive Dashboard</h5>
+                        <p>Interaction Design&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Enterprise</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="2ndbrain.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/2ndbrain_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>2ndBrain</h5>
+                        <p>Design &amp; Research&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Medication Adherence</p>
+                    </div>
+                </div>
+                    <!--/div-->
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="allergybot.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">AllergyBot</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Chatbot</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/allergybot_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>AllergyBot</h5>
+                        <p>UX Design &amp; Research&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Chatbot</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
                     <a href="graphic-design.html" class="portfolio-link">
-                        <div class="caption" style="top:8%">
-                            <div class="itemtext_small">
-                                <h5>Graphic Design</h5>
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Graphic Design</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/graphic_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Graphic Design</h5>
+                    </div>
+                </div>
+                <!--div class="col-sm-4 portfolio-item">
+                    <a href="eatogether.html" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Eatogether</span>
+                                <span class="projectdetail">UX Design&nbsp;&verbar;&nbsp;Mobile Social App</span>
                             </div>
                         </div>
-                        <img class="card-img" src="img/portfolio/graphic2.png" alt="Card image cap">
+                        <img class="card-img" src="img/portfolio/eatogether-new.png" alt="Card image cap">
                     </a>
-                </div7>
-        	</div>
+                </div-->
+                <!--div class="col-sm-4 portfolio-item">
+                    <a href="autodesk.html" class="portfolio-link">
+                        <div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Autodesk FormIt 360</span>
+                                <span class="projectdetail">UX Research &verbar;&nbsp; 3D Modeling Software</span>
+                            </div>
+                        </div>
+                        <img class="card-img" src="img/portfolio/autodesk-new.png" alt="Card image cap">
+                    </a>
+                </div-->
+            </div>
         </div>
     </section>
-    <section id="about" class="secbg" style="background-color:#f8faff">
+     <section id="about" class="secbg" style="background-color:#f8faff">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 ml-auto mr-auto text-center">
@@ -282,6 +337,5 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>   
+    <script src="js/freelancer.min.js"></script> 
 </body>
-</html>
