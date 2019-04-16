@@ -976,3 +976,11 @@ line-height: 1.5rem}
 .liststyle div{
   padding-left:1.6rem;
 }
+.itemtext_moreworks h5{
+  font-size:1.1rem;
+  line-height:0.5rem;
+}
+.itemtext_moreworks p{
+  font-size:0.8rem;
+  line-height:0.5rem;
+}
