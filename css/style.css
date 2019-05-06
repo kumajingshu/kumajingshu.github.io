@@ -919,8 +919,8 @@ button{
   color:rgba(0,0,0,.90);
 }
 .col-md-10{
-  padding-left:10%;
-  padding-right:10%
+  padding-left:8%;
+  padding-right:8%
 }
 .content_container{
   padding-right:8%;
@@ -983,4 +983,22 @@ line-height: 1.5rem}
 .itemtext_moreworks p{
   font-size:0.8rem;
   line-height:0.5rem;
+}
+#synthesis i{
+ border-radius: 50%;
+ border: 2px solid #5e7bf1;
+ padding:0.8rem;
+ font-size:1.8rem;
+ color:#5e7bf1;
+ margin-bottom:2rem;
+}
+.icon_text{
+  margin-bottom:2rem;
+  margin-left:0.5rem;
+  line-height: 1.5rem;
+  font-size:1rem;
+}
+.blur {
+  opacity:0.5;
+
 }
