@@ -2,6 +2,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jingshu Zhao</title>
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
+    <link rel="shortcut icon" href="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/img/portfolio/logoimage.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/css/freelancer.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- Your custom styles (optional) -->
+    <link href="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/css/style.css" rel="stylesheet">
+    <link href="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/css/homepage.css" rel="stylesheet"> 
+</head>
 <title></title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,24 +35,70 @@
 
 body {
 
-	background-image: url('grunge_patterns.jpg');
+	/*background-image: url('grunge_patterns.jpg');*/
 	background-attachment: fixed;
 	color: #333;
+	font-family: 'Lato',sans-serif
 }
 
 .box {
-	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
-}
+	border-radius: .5rem;
+	background: rgba(101, 101, 101, 0); 
+	max-width:320px;
+	width: 100%
 
+}
+.inputbox{
+
+    border: 0;
+    border-radius: 6px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .1) !important;
+    font-size:16px;
+    width:100%;
+    height:40px;
+    padding: 10px 12px 10px 12px;
+    color:#1d2129;
+	font-weight:400;
+	font-family: 'Lato',sans-serif !important;
+	margin-bottom:16px; 
+	text-align:left
+}
+.inputbox:focus,
+.inputbox:active {
+	box-shadow: inset 0 0 0 1px rgba(94, 145, 241) !important;
+    /*border: 1px solid #5E7BF1;*/
+    outline: none
+}
+.submit_button:focus,
+.submit_button:active{
+	outline: none
+}
+.submit_button{
+	background: #5E7BF1;
+    border: 1px solid #5E7BF1;
+    border-radius: 6px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Lato',sans-serif !important;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    letter-spacing: normal;
+    overflow: hidden;
+    padding: 0 12px;
+    text-overflow: ellipsis;
+    text-shadow: none;
+    width: 100%;
+}
 .lightbox {
-	zoom: 1.5;
-	position: fixed;
+	zoom: 1;
+	position: relative;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(10, 10, 10, 0.8);
+	background: rgba(10, 10, 10, 0);
 	text-align: center;
 	margin: auto;
 
@@ -49,38 +118,77 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
-   text-align: center;
+   color: #333333;
+   opacity:0.5;
+   text-align:left;
 }
 
 ::-moz-placeholder {
-   color: #955;
-   text-align: center;
+   color: #333333;
+   opacity:0.5;
+   text-align: left;
 }
 
 :-ms-input-placeholder {
-   color: #955;
-   text-align: center;
+    color: #333333;
+   opacity:0.5;
+   text-align: left;
 }
 
 </style>
 
 <body>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light hnav" id="navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <img class="img-logo" src="0b93bb08ffcad5926c91fbe2a5ac95c6bf8dd1b1/img/portfolio/logoimage.png">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<div id="loginbox" class="lightbox" >
-		<div class="horizontal">
-			<div class="vertical">
-				<div class="box">
-					<input style="margin: 16px; text-align: center;" id="password" type="password" placeholder="password" /> <br />
-					<button id="loginbutton" type="button">Enter</button>
-					<p id="wrongPassword" style="display: none">wrong password</p>
+            <!--div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div-->
+        </div>
+    </nav>
+    <header>
+	   <div class="container">
+	        <div class="row align-items-center" style="margin-top:2rem;margin-bottom:1rem">
+	            <div class="col-md-10">
+	                <h1 class="display-5" style="text-transform: none;"><span style="color:#5E7BF1">Hi, </span><span style="font-weight:500">I am Jingshu Zhao</span></h1>
+	                <h2 class="lead" style="font-size:1.6rem;line-height:2rem;font-family:'Ubuntu', sans-serif;color:#333333;">A designer passionate about solving complex problems with the mindset of a journalist</h2>
+	            </div>
+	        </div>
+	    </div>
+	</header>
+	<div class="container">
+		<div class="row align-items-center" style="margin-top:2rem;margin-bottom:1rem">
+		    <div class="col-md-10" id="loginbox" class="lightbox" >
+				<div class="horizontal">
+					<div class="vertical">
+						<div class="box">
+							<div style="margin-bottom:8px;text-align:left;font-size:1rem;font-weight:600">Enter password to visit my portfolio</div>
+							<input style="text-align:left" id="password" type="password" placeholder="Password" class="inputbox"/> <br/>
+							<div id="wrongPassword" style="display: none;font-size:1rem;margin-top:-12px;margin-bottom:16px;color:#f06368">Wrong password. Please try again.</div>
+							<button id="loginbutton" type="button" class="submit_button">Start</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-
-
+	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 
 
@@ -109,8 +217,8 @@ div.vertical {
 
 				parent.location.hash= hash;
 
-				//$("#wrongPassword").show();
-				$("#password").attr("placeholder","wrong password");
+				$("#wrongPassword").show();
+				$("#password").attr("placeholder");
 				$("#password").val("");
 			}
 		});
