@@ -28,9 +28,8 @@
     max-width:980px;
     margin:0 auto;
     grid-template-areas:
-        "div1 div2 div2"
-        "div3 div4 div5"
-        "div6 div6 div7";
+        "div1 div1 div2"
+        "div3 div4 div5";
     }
     .self-intro{
     margin-right:6rem;}
