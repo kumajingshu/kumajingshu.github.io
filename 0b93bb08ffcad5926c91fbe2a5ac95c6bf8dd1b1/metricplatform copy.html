@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Metrics Tracking Tool</title>
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
+    <link rel="shortcut icon" href="img/portfolio/logoimage.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 30) {
+                $('#divmenu').fadeIn('slow',function(){$(this).css({'visibility': 'visible'});});
+            }
+                    else {$('#divmenu').fadeOut('slow');
+                }
+        });
+    </script-->
+    <style type="text/css">
+
+        table {
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        table th, table td{
+            overflow: hidden;
+        }
+        table th{font-size:1rem;font-weight:500;}
+        table tr{font-size:1rem;font-weight:300;}
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target="#divmenu" data-offset="10">
+
+    <!-- Start your project here-->
+    <!--div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+
+            <h5 class="animated fadeIn mb-4">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+        </div>
+    </div-->
+        <!--Card-->
+     <!--nav class="navbar navbar-custom projectnav"-->
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light hnav" id="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-logo" src="img/portfolio/logoimage.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#portfolio">Projects<span class="sr-only">(current)</span></a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="graphic-design.html">Graphics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a href="index.html">
+                    <img class="img-logo" src="img/portfolio/logoimage.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        <!--/div>
+        <!-- /.container-fluid -->
+    <!--/nav-->
+    <header id="header" style="background-color:#FFFFFF">
+        <div class="header_bg"></div>
+        <!--div id="bgwrap" class="clearfix">
+            <div id="gloss"></div>
+            <div class="container">
+            	<div class="d-flex flex-md-row">
+            		<div>
+            			<h1>SHRINE Data Steward Application</h1>
+            			<h2 class="text-center" style="color:white;">A Web application for identifying<br> malicious use of patient data</h2>
+            		</div>
+            		<div>
+            			<img class="card-img" src="img/portfolio/dsa-pic/datasteward2.png" alt="Card image">
+            		</div>
+            	</div>
+            </div>
+         </div>
+            <!--img class="card-img" src="img/overlays/allergybg.jpg" alt="Card image" style="max-height:760px;background-position:top"-->
+            <div class="header_bg" style="background-color:#E3E4FF"></div>
+            <div class="container" style="padding-top:10%;">
+                <div class="row align-items-center">
+                	<div class="col-md-7" style="padding:10%">
+                        <h1 class="projectname_page">Metric Tracking Platform</h1>
+                        <h2 class="projectintro" >Projects' metric performance tracking and dashboarding web app for a top tech company</h2>
+                        <p class="strong brief" style="color:#333333">Interaction Design</p>
+                    </div>
+                    <div class="col-md-5" style="background-color:transparent;padding:0.5%">
+                        <img class="card-img" src="img/portfolio/platformm/product_image.png" alt="Card image" style="width:120%;padding-top:2rem">
+                    </div>
+                </div>
+                <!--div class="row">
+                    <div class="col-md-12 text-center strong" style="color:white;font-size:1.5rem;line-height:1.222222rem">
+                    	<p style="color:white;font-size:1.125rem;line-height:1.222222rem">Summer Internship Project in Harvard Catalyst, Harvard Medical School</p>
+                    	<!--button type="button" class="btn btn-keyword" style="border-radius: 1rem; background-color:transparent; border:2px solid #fff; color:#fff">Wireframe</button-->
+                    	<!--p class="strong" style="color:white;font-size:1.125rem;line-height:1.222222rem"><strong style="color:white">Key words:</strong> Interview, Wireframe, Usability Test</p>
+                    </div>
+                </div-->
+            </div>
+            <div class="scrolldown">
+                <a class="btn-jump btn-down" href="#main">
+                    <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container" id="intro">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Introduction</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>In the first half of 2020, I worked as the only designer to redesign the major workflow and design new features for a metric performance tracking and dashboarding platform of a top social media company (Platform M for short in the following story). The redesigned workflow and UI based on the latest design system have been launched successfully.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5 class="h5title">Team &amp; My Role</h5>
+                    <ul class="liststyle">
+                        <li>Worked closely with PM and PO and 2 developers on daily basis.</li>
+                        <li>Wore multiple hats to define use cases, conduct QA testing, and lead the CSS enhancement in addition to my design work.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5 class="h5title">Toolbox</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <ul class="horizontal">
+                        <li>Figma</li>  
+                        <li>Design System</li>  
+                        <li>React / CSS </li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 text-center" style="margin-top:1rem">
+                    <a href="#design1" class="btn-jump">
+                        <button type="button" class="btn btn-outline-info">View The Design</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section style="background-color:#f8faff">
+        <div class="container" id="challenge">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Challenge</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>Current metric management and dashboarding experience is inefficient which makes the client team hesitant to introduce the tool to larger user groups.</p>
+                    <ul class="liststyle">
+                        <li>Complex metric adding and dashboard creation process</li>
+                        <li>Lack of communication system to notify metric or project risk</li>
+                        <li>Generic homepage adding efforts for accessing personal projects </li>
+                    </ul>
+                </div>
+                <div class="col-md-10" style="margin-top:1rem">
+                    <!--h5 class="h5title">Complex metric adding and dashboard creatioin process</h5>
+                        <p>Users are frustrated about adding metric one by one to a project and then import all these metrics again to create a dashboard.</p-->
+                    <p class="quote">I believe I would be the only one who will create a dashboard like this because I am the admin...I need to make sure the tool is easy to use to be adopted by more users.</p>
+                    <p>With this insight from the PO/client, who is also the key persona, the team believes the users' life could be much easier. Thus, I was asked to design for:</p>
+                    <p><strong>How might we create a simplified metric and project management experience that can enhance users' work efficiency and communicate metric performance risk effectively?</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secbg" >
+        <div class="container" id="solution">
+        	<div class="row">
+        		<div class="col-md-10">
+                    <h3>Solution Overview</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row image-row align-items-center">
+                        <div class="col-md-7">
+                            <img class="card-img" src="img/portfolio/platformm/edit-view.jpg" alt="review queries" style="background-position:top;border-color:rgba(0,0,0,0.1);box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Simplified workflow to create project and view dashboard</h5>
+                            <p>Import multiple metrics at a time and then click one button to view the dashboard.</p>
+                        </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:2rem">
+                <div class="col-md-10">
+                    <div class="row image-row align-items-center">
+                        <div class="col-md-5">
+                            <h5>Proactive metrics tracking via a goal and alert system</h5>
+                            <p>Set goals and alerts with the support of real-time calculated instances and then stay informed about risks.</p>
+                        </div>
+                        <div class="col-md-7">
+                            <img class="card-img" src="img/portfolio/platformm/alert-edit.png" alt="review queries" style="background-position:top;border-color:rgba(0,0,0,0.1);box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);">
+                        </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:2rem">
+                <div class="col-md-10">
+                    <div class="row image-row align-items-center">
+                        <div class="col-md-7">
+                            <img class="card-img" src="img/portfolio/platformm/home-zoom.jpg" alt="review queries" style="background-position:top;border-color:rgba(0,0,0,0.1);box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);">
+                        </div>
+                        <div class="col-md-5">
+                            <h5>Personalized homepage with restructured navigation</h5>
+                            <p>Access my projects, subscriptions, and pinned projects easily and customize homepage as a pinned project.</p>
+                        </div>
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-md-5">
+                    <img class="card-img" src="img/portfolio/dsa-pic/dsa-entry.png" alt="Existing Shrine interface" style="background-position:top">
+                    <p class="illustration">Existing SHRINE interface - recent active researchers<p>
+                </div>
+                <div class="col-md-5">
+                    <img class="card-img" src="img/portfolio/dsa-pic/tree-view.png" alt="Existing Shrine interface" style="background-position:top">
+                    <p class="illustration">Existing SHRINE interface - aggregate number of query terms<p>
+                </div>
+            </div-->
+		</div>
+	</section>
+    <section id="approach" style="background-color:#f8faff">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Process</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>As the only designer on the team, I was involved in the whole process from gathering requirements to brainstorming, design, tests, and development.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 image-row">
+                    <img class="card-img" src="img/portfolio/platformm/process.png" alt="Existing Shrine interface" style="background-position:top">
+                </div>
+            </div>
+             <div class="col-md-10">
+                    <p>I was able to build empathy with the user and tested the design with some colleagues, despite the time constraints and the nature of the projects, which gave me a limited resource of research and access to end-users. I had conversations with the PO, who is also the most active user, to understand the user behavior/frustration, and also observe how users set up the metrics and goals on the existing platform.</p>
+            </div>
+        </div>
+    </section>
+    <section id="research" class="secbg" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Persona</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>The initial user group mainly comes from one team that focuses on tracking metrics in a specific area. In the future, there might be more users from different teams to track the performance of other types of metrics.</p>
+                </div>
+            <!--/div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h4>Expert Interview</h4>
+                    <p>I first learned the following aspects with the tech lead and the content curator on the SHRINE team:</p>
+                    <ul>
+                        <li>Malicious Query Behavior: definition, types, characteristics, patterns, review methods</li>
+                        <li>Existing DSA: current user flow and design intention</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bd-exmple popover-demo">
+                <div class="bd-example-popovers">
+                    <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="" aria-describedby="popover754312">Popover on top</button>
+                </div>
+                <a class="btn btn-info" href="#intro" style="margin-bottom:3%">More about Malicious Query Behavior</a>
+            </div-->
+            <!--div class="row align-items-center">
+                <div class="col-md-10">
+                    <h4>Method</h4>
+                </div>
+            </div>
+            <div class="row align-items-end">
+                <div class=col-md-10>
+                    <ul class="liststyle">
+                        <li>Interview 4 Data Stewards (DSs) from pilot participating institutions.</li>
+                        <li>Give task to DSs and observe how they review normal and problematic queries.</li>
+                        <li>Built the affinity wall to analyze interview results.</li>
+                    </ul>
+                </div-->
+                
+                <!--div class="col-md-4">
+                            <img class="card-img" src="img/portfolio/dsa-pic/affinitywall-dsa.jpg" alt="Existing Shrine interface" style="background-position:top">
+                        </div-->
+            </div>
+                    <!--div class="row align-items-start">
+                        <div class="col-sm-6 col-md-3 image-row">
+                            <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/p1-ds.png" alt="Existing Shrine interface" style="width:60%">
+                            <p>P1 is a director who has rich work experienc in data stewardship.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 image-row">
+                            <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/p2-ds.png" alt="Existing Shrine interface" style="width:55%">
+                            <p>P2 is a manager who has experience in biology, data analysis, and software development.</p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 image-row">
+                            <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/p3-ds.png" alt="Existing Shrine interface" style="width:55%">
+                            <p>P3 is a sof
+                        </div>
+                        <div class="col-sm-6 col-md-3 image-row">
+                            <img class="card-img mx-auto d-block" src="img/portfolio/dsa-pic/p4-ds.png" alt="Existing Shrine interface" style="width:55%">
+                            <p>P3 is a database administrator... 
+                        </div>
+                    </div>
+                </div-->
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row image-row align-items-center">
+                        <div class="col-md-4">
+                            <img class="card-img" src="img/portfolio/platformm/dev.png" alt="review queries" style="background-position:top;width:75%">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="h5title">Main persona: project / metric editors</h5>
+                            <p>These groups of users are engineers/data scientists/program managers with a technical background. They use the tool to add metrics, goals, and alerts, and monitor metrics.</p>
+                        </div>
+                        <div class="col-md-12"  style="margin-top:16px">
+                            <ul class="liststyle">
+                                    
+                                        <!--ul> 
+                                            <li class="quotes">Interviewee 2: "How do the Data Stewards keep track of the researchers and what their work is?"</li>
+                                            <li class="quotes">Interviewee 2: "Part of the problem is that we don't know what should be defined as malicious behavior."</li>
+                                            <li class="quotes">P3: I have not started my work yet, although I attended the training. How do we determine what will be an inappropriate use of the network? I am not sure what to do with DSA.</li>
+                                        </ul-->
+                                <li>They may conduct these activities only a few times a year, but every time, they have deep interactions with the tool, which requires an easy-to-follow logic setting /calculation process.</li>
+                                <li>They have a clear idea of the metrics and goals they need. A process to handle multiple items together is needed to avoid repetitive clicks.</li>
+                                <li>They tend to use a large screen to take a look at "red" metrics and their trends quickly.</li>
+                                <li>They are very busy, so they need to finish the editing process efficiently and also have a way to be notified about metric risk without coming to the site.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row image-row align-items-center">
+                        <div class="col-md-4">
+                            <img class="card-img" src="img/portfolio/platformm/stakeholders.png" alt="review queries" style="background-position:top;width:80%">
+                        </div>
+                        <div class="col-md-8">
+                            <h5 class="h5title">Secondary persona: dashboard viewers</h5>
+                            <p>This group of users are leads or other stakeholders who may be either expert in data or not.</p>
+                        </div> 
+                        <div class="col-md-12"  style="margin-top:16px">
+                            <ul class="liststyle">
+                                    
+                                        <!--ul> 
+                                            <li class="quotes">Interviewee 2: "How do the Data Stewards keep track of the researchers and what their work is?"</li>
+                                            <li class="quotes">Interviewee 2: "Part of the problem is that we don't know what should be defined as malicious behavior."</li>
+                                            <li class="quotes">P3: I have not started my work yet, although I attended the training. How do we determine what will be an inappropriate use of the network? I am not sure what to do with DSA.</li>
+                                        </ul-->
+                                <li>They only view dashboard during presentations, when receiving a dashboard shared by others or check metric performance occasionally.</li>
+                                <li>The dashboard needs to deliver a quick and clear insight to them.</li>
+                            </ul>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color:#f8faff">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>User Journey</h3>
+                </div>
+            </div>
+            <!--div class="row">
+                <div class="col-md-10">
+                    <p>Based on the interview findings and the evaluation on the existing DSA, I created the user journey map to understand <strong>the gap between the actual experience and the ideal user flow</strong>.</p>
+                </div>
+            </div-->
+            <div class="row">
+                <div class="col-md-10 image-row">
+                    <img class="card-img" src="img/portfolio/platformm/userjourney.png" alt="User Journey Map">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="design1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Design</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5 class="h5title">Goal: Create projects and dashboard easily</h5> 
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-md-10">
+                    <h5>Insight</h5>
+                    <ul class="liststyle">
+                        <li><span style="font-weight:600">Multiple clicks</span> have to be done to add metrics one by one while users have a clear idea about all metrics they want to include.</li>
+                        <li><span style="font-weight:600">Repetitive process</span> of data import and viewership management is required because the dashboard is a separate entity with the project.</li>               
+                    </ul>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-10">
+                    <h5>Solution</h5>
+                    <ul class="liststyle">
+                        <li><strong>Add multiple metrics at one time</strong></li>
+                        <div class="list-p"><p>Use collapsable rows to avoid long-scroll and update metric name while users make edits to better distinguish metrics.</p></div>
+                    </ul>
+                    <ul class="liststyle">
+                        <li><strong>Switch between project management and dashboard viewing with one button</strong></li>
+                        <div class="list-p"><p>Cut the separate flow of dashboard creation and management and give users an immediate view about what the dashboard looks like once basic project elements are set up.</p></div>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div class="row image-row2">
+                        <div class="col-md-11 ml-auto mr-auto">
+                            <!--p class="image_text2">After</p-->
+                            <img class="card-img" src="img/portfolio/platformm/add_process.gif" alt="In-context help &amp; Sensitive Terms" style="border:1px solid;border-color:rgba(0,0,0,0.1)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5 class="h5title">Goal: Set goals and alert logics in an intuitive flow</h5> 
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-md-10">
+                    <h5>Insight</h5>
+                    <ul class="liststyle">
+                        <li><span style="font-weight:600">Complex logics</span> exist for different types of goals and ways of setting goal value and also alerts which are based on goals/progress toward goals.</li>
+                        <li><span style="font-weight:600">Multiple use cases</span> are needed for sending alerts to track metric progress against goals.</li>
+                        <li><span style="font-weight:600">Technical constraints</span> make it hard to display the goal / alert line while setting.</li>                                   
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5>Solution</h5>
+                    <ul class="liststyle">
+                        <li><strong>Present the step and logic based on the mental modal of defining a range on a chart</strong></li>
+                        <div class="list-p"><p>Help users first specify desired performance direction (above or below the goal line) and then define where the goal line is</p></div>
+                    </ul>
+                    <ul class="liststyle">
+                        <li><strong>Provide immediate calculated result during goal and alert setting</strong></li>
+                        <div class="list-p"><p>Show the calculated goal during the input process to help users review whether the goal makes sense; display immediately the calculated next instance based on goal value to give users a concrete idea about the ruleset.</p></div>
+                    </ul>
+                    <ul class="liststyle">
+                        <li><strong>Use a sentence format to support alert setting</strong></li>
+                        <div class="list-p"><p>Frame the alert rule-setting as "If...when...then" to support add one rule for all goals to avoid repetitive works.</p></div>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div class="row image-row2">
+                        <div class="col-md-11 ml-auto mr-auto">
+                            <!--p class="image_text2">After</p-->
+                            <img class="card-img" src="img/portfolio/platformm/goals_and_alerts.gif" alt="In-context help &amp; Sensitive Terms" style="border:1px solid;border-color:rgba(0,0,0,0.1)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5 class="h5title">Goal: Get access and organize "my" projects easily</h5> 
+                </div>
+            </div>
+            <div class="row align-items-start">
+                <div class="col-md-10">
+                    <h5>Insight</h5>
+                    <ul class="liststyle">
+                        <li><span style="font-weight:600">Generic list</span> on the homepage requires searching and saving projects manually from the users.</li>
+                        <li><span style="font-weight:600">Low usage</span> of some tabs like metrics tab causes a waste of space.</li>                                   
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <h5>Solution</h5>
+                    <ul class="liststyle">
+                        <li><strong>Make homepage a customized personal workspace</strong></li>
+                        <div class="list-p"><p>Structure the information architecture based on "owned by me" and "shared with me". Provide a central portal on the homepage for users to access everything about them quickly. Enable pinned projects and customizable the homepage to help users access the most important projects easily.</p></div>
+                    </ul>
+                    <ul class="liststyle">
+                        <li><strong>Help users quickly understand the risk and priorities of projects</strong></li>
+                        <div class="list-p"><p>The color of the KPI and alert related information make the homepage also a dashboard to understand the status across projects.</p></div>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <div class="row image-row2">
+                        <div class="col-md-11 ml-auto mr-auto">
+                            <!--p class="image_text2">After</p-->
+                            <img class="card-img" src="img/portfolio/platformm/homenav.gif" alt="In-context help &amp; Sensitive Terms" style="border:1px solid;border-color:rgba(0,0,0,0.1)">
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </section>
+                    <!--ul>
+                        <li type=none>Based on initial interviews, Interviewee 3 and 4 seemed most likely to perform the work of a Data Steward. Interviewee 1 and 2 provided valuable input on the Data Steward role itself, but they might not work as a data steward considering they are director/manager roles in their organization.</li>
+                    </ul>
+                    <p> I created interactive prototypes and observed how they reviewed the queries and whether they could identify malicious behavior. </p>
+                </div>
+            </div>
+                    <p class="strong">The difficulties they meet when finding malicious behavior reflect that they need more training.</p>
+                    <ul class="liststyle2">
+                        <li>They didn’t know clearly what kinds of malicious behavior they need to look for.</li>
+                        <li>They did not have sufficient knowledge about the complex pattern of terms that indicate re-identification. They said they could not see the pattern without training.</li>
+                        <li>They had misunderstandings about their job role, which gave them the incorrect concept of the information they need to find re-identification.</li> 
+                        <li>They didn’t show a systematic method to review queries, such as relating the terms with the topics.</li>
+                    </ul>
+                    <p>I realized that Data Steward Application cannot succeed without the correct understanding of their job role, malicious behavior, and the method of reviewing queries. Thus, I provided recommendations about how to train the DSs to have the correct knowledge, in addition to iterating on the design.</p>
+                </div>
+            </div-->
+    <section id="usabilitytest" style="background-color:#f8faff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Test &amp; Iteration</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>There are multiple rounds of iteration based on feedback from developers and usability testings. The major iterations focus on:</p>
+                    <ul class="liststyle">                    
+                        <li>Define the information architecture and flow of creating projects and dashboard.</li>   
+                        <li>Lead the user step by step to set the goals and help them understand the concept of goal setting.</li>
+                        <li>Help users understand that alerts are recurring which apply to all goals rather than alerts needed to be set for each goal.
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="take-aways" class="secbg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3>Impact &amp; Take-aways</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <p>The redesigned workflow significantly reduced the steps and time users need to set up the projects and dashboards. More user groups will start to use this tool.</p>
+                    <p>With the constraints of limited research resources, I took the hypothesis approach and validated my understanding and design with stakeholders. At the same time, I was trying my best to break these constraints by involving my colleagues to test the design.</p>
+                    <p>I built a collaborative environment by involving the PM and developers, and another designer colleague to brainstorm and critique to avoid design in the silo. As the only designer on the team, I needed to absorb different opinions but at the same time held the designer's point of view to speak for UX.</p>
+                    <p>I enhanced the collaboration between designer and dev by frequently checking in with devs, providing design documents for clear communication, and providing as many details as possible to make CSS enhancement easy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="divmenu-hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 ml-auto col-xs-0">
+                    <nav class="nav flex-column contents" id="divmenu">
+                        <a class="nav-link" href="#main">Introduction</a>
+                        <a class="nav-link" href="#challenge">Challenge</a>
+                        <a class="nav-link" href="#solution">Solution</a>
+                        <a class="nav-link" href="#approach">Process</a>
+                        <a class="nav-link" href="#research">Research</a>
+                        <a class="nav-link" href="#design1">Design</a>
+                        <a class="nav-link" href="#usabilitytest">Test &amp; Iteration</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+   <section id="portfolio">
+        <div class="container" style="margin-top:5rem;">
+            <div class="row">
+                <div class="col-md-10">
+                    <h3 class="text-center">More Works</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <!--div class="itemdiv"-->
+                            <a href="amesite.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">2ndBrain</span>
+                                        <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/amesite_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>Amesite</h5>
+                                <p>Social Learning&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Mobile App</p>
+                            </div>
+                        </div>
+                        <!--div class="col-sm-4 portfolio-item graphic">
+                            <a href="datasteward.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">SHRINE Data Steward</span>
+                                        <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Web App</span>
+                                    </div>
+                                </div-->
+                                <!--img class="card-img" src="img/portfolio/shrine_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5 style="font-size:1.1rem">SHRINE Data Steward</h5>
+                                <p>Clinical Data Security&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Web App</p>
+                            </div>
+                        </div-->
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <!--div class="itemdiv"-->
+                            <a href="mint.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">2ndBrain</span>
+                                        <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/mint_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>Mint</h5>
+                                <p>Fintech&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Product Redesign</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <!--div class="itemdiv"-->
+                            <a href="2ndbrain.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">2ndBrain</span>
+                                        <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/2ndbrain_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>2ndBrain</h5>
+                                <p>Med Adherence&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Mobile App</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <a href="allergybot.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">AllergyBot</span>
+                                        <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Chatbot</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/allergybot_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>AllergyBot</h5>
+                                <p>Chatbot&nbsp;&nbsp;&verbar;&nbsp;&nbsp;CHI Finalist</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <!--div class="itemdiv"-->
+                            <a href="tax_executive_dashboard.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">2ndBrain</span>
+                                        <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/tax/tax_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>Tax Executive Dashboard</h5>
+                                <p>Enterprise&nbsp;&verbar;&nbsp;Workflow&nbsp;&verbar;&nbsp;Data</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 portfolio-item graphic">
+                            <a href="graphic-design.html" class="portfolio-link">
+                                <!--div class="caption">
+                                    <div class="caption-content">
+                                       <span class="projectname">Graphic Design</span>
+                                    </div>
+                                </div-->
+                                <img class="card-img" src="img/portfolio/graphic_index.png" alt="Card image cap">
+                            </a>
+                            <div class="itemtext itemtext_moreworks">
+                                <h5>Graphic Design</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <!--div class="col-md-12 text-center">
+                    	<p style="text-transform: none"><i class="fa fa-envelope fa-fw" aria-hidden="true" style="color:#333333"></i>	&nbsp;&nbsp;jszhao@umich.edu</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="mailto:jszhao@umich.edu" target="_top" class="btn-social"><i class="fa fa-envelope fa-fw fa-2x" aria-hidden="true" style="color:#333333"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/jingshu-zhao-29983822" class="btn-social"><i class="fa fa-fw fa-linkedin-square fa-2x" aria-hidden="true" style="color:#333333"></i></a>
+                            </li>
+                        </ul>
+                    </div-->
+                    <div class="col-md-12 footername">
+                        All rights reserved &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html">Jingshu Zhao</a></span> 2017&nbsp;&nbsp;&verbar;&nbsp;&nbsp;<a class="strong" href="mailto:jszhao@umich.edu">jszhao@umich.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Modals -->
+    <div class="modal" id="portfolioModal1" tabindex="-1" role="dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:1rem;margin-right:2rem">
+            <span aria-hidden="true" style="color:#FFFFFF;opacity:1">&times;</span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.png" alt="persona1" style="margin-top:2%;margin-bottom:2%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="portfolioModal2" tabindex="-1" role="dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:1rem;margin-right:2rem">
+            <span aria-hidden="true" style="color:#FFFFFF;opacity:1">&times;</span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona2.png" alt="persona1" style="margin-top:2%;margin-bottom:2%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <button type="button" class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i></button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.jpg" alt="persona1">
+                        </div>
+                        <button type="button" class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div-->
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) >
+    <div class="scroll-top page-scroll">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="icon-arrow-down"></i>
+        </a>
+    </div-->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+       var hT = $('#header').offset().top,
+           hH = $('#header').outerHeight()-100,
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+       if (wS > hH){ 
+           $('#divmenu').fadeIn('slow',function(){$(this).css({'visibility': 'visible'});});
+       }
+           else {$('#divmenu').fadeOut('fast');
+       }
+    });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-91134374-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        $(function() {
+        $('.btn-jump').click (function() {
+        $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top }, 'slow');
+        return false;
+        });
+    });
+    </script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script> 
+
+
+</body>
+
+</html>
