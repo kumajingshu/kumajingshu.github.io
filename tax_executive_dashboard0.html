@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Tax Executive Dashboard</title>
+    <!-- Font Awesome -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
+    <link rel="shortcut icon" href="img/portfolio/logoimage.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--script>
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 30) {
+                $('#divmenu').fadeIn('slow',function(){$(this).css({'visibility': 'visible'});});
+            }
+                    else {$('#divmenu').fadeOut('slow');
+                }
+        });
+    </script-->
+    <style type="text/css">
+
+        table {
+            table-layout: fixed;
+            word-wrap: break-word;
+        }
+
+        table th, table td{
+            overflow: hidden;
+        }
+        table th{font-size:1rem;font-weight:500;}
+        table tr{font-size:1rem;font-weight:300;}
+    </style>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target="#divmenu" data-offset="10">
+
+    <!-- Start your project here-->
+    <!--div style="height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
+
+            <h5 class="animated fadeIn mb-4">Thank you for using our product. We're glad you're with us.</h5>
+
+            <p class="animated fadeIn text-muted">MDB Team</p>
+        </div>
+    </div-->
+        <!--Card-->
+     <!--nav class="navbar navbar-custom projectnav"-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light hnav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img class="img-logo" src="img/portfolio/logoimage.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!--div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a href="index.html">
+                    <img class="img-logo" src="img/portfolio/logoimage.png">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        <!--/div>
+        <!-- /.container-fluid -->
+    <!--/nav-->
+    <header id="header" style="background-color:#FFFFFF">
+        <div class="header_bg"></div>
+        <!--div id="bgwrap" class="clearfix">
+            <div id="gloss"></div>
+            <div class="container">
+            	<div class="d-flex flex-md-row">
+            		<div>
+            			<h1>SHRINE Data Steward Application</h1>
+            			<h2 class="text-center" style="color:white;">A Web application for identifying<br> malicious use of patient data</h2>
+            		</div>
+            		<div>
+            			<img class="card-img" src="img/portfolio/dsa-pic/datasteward2.png" alt="Card image">
+            		</div>
+            	</div>
+            </div>
+         </div>
+            <!--img class="card-img" src="img/overlays/allergybg.jpg" alt="Card image" style="max-height:760px;background-position:top"-->
+            <div class="header_bg" style="background-color:#E3E4FF"></div>
+            <div class="container" style="padding-top:10%;">
+                <div class="row align-items-center">
+                	<div class="col-md-7" style="padding:10%">
+                        <h1 class="projectname_page">Tax Executive Dashboard</h1>
+                        <h2 class="projectintro" >Providing visibility of tax reporting and tax analytics for global corporations</h2>
+                        <p class="brief" style="color:#333333">Interaction Design</p>
+                    </div>
+                    <div class="col-md-5" style="background-color:transparent;padding:0.5%">
+                        <img class="card-img" src="img/portfolio/tax/tax_header.png" alt="Card image" style="width:120%;padding-top:2rem">
+                    </div>
+                </div>
+            </div>
+            <div class="scrolldown">
+                <a class="btn-jump btn-down" href="#main">
+                    <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section id="main">
+        <div class="container" id="intro">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Introduction</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <p>The complexity of tax preparation is a pain for everyone. Managing the corporate tax is far more challenging for a Tax Executive of a multinational company. My client of this project would like to design a Tax Executive Dashboard as part of a platform to bring transparency and efficiency of corporate tax reporting.</p>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">My Role</h5>
+                    <ul class="liststyle">
+                        <li>Created whiteboard sketches to communicate design ideas with designers and manager</li>
+                        <li>Created wireframes, data visualization, hi-fi mock-ups, and prototypes and iterated on an agile fashion based on the feedback from stakeholders</li> 
+                        <li>Synthesized previous research and analyzed existing systems; summarized and presented key features and user journey to stakeholders to get alignment and priorities</li>
+                    </ul>
+                </div>
+            </div>
+             <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">Tool</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="horizontal">   
+                        <li>Sketch</li>
+                        <li>Invision</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section style="background-color:#f8faff">
+        <div class="container" id="intro">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>The Ask</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <p>The dashboard needs to demonstrate the capabilities of real-data sharing, transparency, visibility and easy collaboration.</p>
+                    <ul class="liststyle">
+                        <li>Provide a high-level overview for the user to understand the whole picture and identify the problem rather than the showing detailed tasks</li>
+                        <li>Demonstrate the capability of analyzing global tax payment with data visualization</li>
+                        <li>Be consistent with the new design of the platform for Tax Service Provider</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container" id="intro">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Meet the Persona</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <img src="img/portfolio/tax/debra.png" style="border-radius: 50%;width:80%">
+                        </div>
+                        <div class="col-md-9">
+                            <p>Debra is a busy Tax VP in a multinational corporation which needs to pay tax over the states and the world. Tracking the progress of numerous tax preparation is always challenging for her.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">Needs</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="liststyle">
+                        <li>Gain a high-level and clear overview of the real-time status and issues as an executive</li>
+                        <li>Identify the issues during tax preparation timely so that no due date will be missed.</li>
+                        <li>Understand the tax payment across different regions and its change in the recent 2 years</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h5 class="h5title">Behavior</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="liststyle">
+                        <li>View the tax obligations based on the due date</li>
+                        <li>View the tax preparation in their workflow, which includes 4 steps: data collection, preparation, review, and complete</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="overview" style="background-color:#f8faff">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Design Overview</h3>
+                </div>
+            </div>
+            <!--div style="margin-left:0.5rem" class="row justify-content-md-center">
+                <div class="col-md-11">
+                    <p>The design aims for helping the busy Tax Executive identify the reason for a delay during tax preparation in one view.</p>
+                </div>
+            </div-->
+            <div class="row justify-content-md-center align-items-center">
+                <div class="col-md-4">
+                    <h5 class="h5title">Overview - Pie Chart</h5>
+                    <p>Give the user a quick overview of all obligations based on due date<p>
+                    <h5 class="h5title">Outstanding Items - KPI</h5>
+                    <p>Prompt users the most urgent problems</p>
+                    <h5 class="h5title">Progress in each stage</h5>
+                    <p>Help the user better understand the where the problem in the KPI is and identify off-track items in the early stage in order to avoid missing the final due</p>
+                    <h5 class="h5title">Tax Analytics</h5>
+                    <p>Provide insights about the comparison between 2 years and between the actual and statutory rate with bar charts</p>
+                </div>
+                <div class="col-md-7">
+                    <img class="card-img" src="img/portfolio/tax/new_tax_dashboard.png" alt="newsfeed" style="background-position:top">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="iteration" class="secbg">
+        <div class="container">
+                 <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3>Iteration</h5>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="row align-items-center">
+                        <div class="col-md-6" style="margin-top:1rem;margin-left:-0.5rem">
+                            <p style="margin-bottom:0.5rem"><strong>Table View</strong></p>
+                            <ul class="liststyle">
+                                <li><strong>Pro</strong><br>Show both high-level and the exact problems in one view</li>
+                                <li><strong>Con</strong><br>Not effective in some edge cases, eg. when there is 0 overview or when there are many problematic obligations</li>
+                            </ul>
+                            <p style="margin-bottom:0.5rem"><strong>Chart View</strong></p>
+                            <ul class="liststyle">
+                                <li><strong>Pro</strong><br>Show a whole picture of obligations in each stages; bring connectivity to the existing information in obligation tab</li>
+                                <li><strong>Con</strong><br>Need to drill down to another page to show details (viewing details is not a priority for target user)</li>
+                                <li><strong>From chevron to timeline</strong><br>More simplified visually</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6" style="padding-left:2%;padding-right:2%;">
+                            <img class="card-img image-row" src="img/portfolio/tax/v1.png" alt="Before: The existing design">
+                            <p class="image_text2">V1: Table View</p>
+                            <img class="card-img image-row" src="img/portfolio/tax/v2.png" alt="Before: The existing design">
+                            <p class="image_text2">V2: Chart View - Chevron</p>
+                            <img class="card-img image-row" src="img/portfolio/tax/v3.png" alt="Before: The existing design">
+                            <p class="image_text2">V3: Chart View - Timeline</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="take-aways" class="secbg" style="background-color:#f8faff;">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3 >Take-aways</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <ul class="liststyle">
+                        <li><strong>Build the persona</strong><div>Within a short timeframe and limited access to real users, I gained empathy and understanding of the users by having close communication with Tax SME and friends who work as tax accountant, and digesting existing user research.</div></li>
+                        <li><strong>Use design as a tool of communication</strong><div>There were multiple stakeholders involved and it was hard to get feedback and alignment. Showing the design and iterating quickly was the most effective way to get their thoughts and provide a start point for them to talk to each other.</div></li>
+                        <li><strong>Use design system</strong><div>I followed the design system developed for the large project where this dashboard sits, which ensured the consistency of the look and feel and increased my working efficiency.</div></li>
+                    <ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container" style="margin-top:5rem;">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <h3 class="text-center">More Works</h3>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                    <div class="row">
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="amesite.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/amesite_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Amesite</h5>
+                        <p>iOS Mobile App Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="tax_executive_dashboard.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/tax/tax_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5 style="font-size:1.1rem;margin-top:1.2rem;margin-bottom:0.5rem">Tax Executive Dashboard</h5>
+                        <p>Interaction Design&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Web App</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <!--div class="itemdiv"-->
+                    <a href="2ndbrain.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">2ndBrain</span>
+                                <span class="projectdetail">UX Design &amp; Research&verbar;&nbsp;Mobile App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/2ndbrain_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>2ndBrain</h5>
+                        <p>iOS Mobile App Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="datasteward.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">SHRINE Data Steward</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Web App</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/shrine_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>SHRINE Data Steward</h5>
+                        <p>Web App Research &amp; Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="allergybot.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">AllergyBot</span>
+                                <span class="projectdetail">UX Design &amp; Research&nbsp;&verbar;&nbsp;Chatbot</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/allergybot_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>AllergyBot</h5>
+                        <p>Chatbot Research &amp; Design</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 portfolio-item graphic">
+                    <a href="graphic-design.html" class="portfolio-link">
+                        <!--div class="caption">
+                            <div class="caption-content">
+                               <span class="projectname">Graphic Design</span>
+                            </div>
+                        </div-->
+                        <img class="card-img" src="img/portfolio/graphic_index.png" alt="Card image cap">
+                    </a>
+                    <div class="itemtext">
+                        <h5>Graphic Design</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <!--div class="col-md-12 text-center">
+                    	<p style="text-transform: none"><i class="fa fa-envelope fa-fw" aria-hidden="true" style="color:#333333"></i>	&nbsp;&nbsp;jszhao@umich.edu</p>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="mailto:jszhao@umich.edu" target="_top" class="btn-social"><i class="fa fa-envelope fa-fw fa-2x" aria-hidden="true" style="color:#333333"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/jingshu-zhao-29983822" class="btn-social"><i class="fa fa-fw fa-linkedin-square fa-2x" aria-hidden="true" style="color:#333333"></i></a>
+                            </li>
+                        </ul>
+                    </div-->
+                    <div class="col-md-12 footername">
+                        All rights reserved &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html">Jingshu Zhao</a></span> 2017&nbsp;&nbsp;&verbar;&nbsp;&nbsp;<a class="strong" href="mailto:jszhao@umich.edu">jszhao@umich.edu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Modals -->
+    <div class="modal" id="portfolioModal1" tabindex="-1" role="dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:1rem;margin-right:2rem">
+            <span aria-hidden="true" style="color:#FFFFFF;opacity:1">&times;</span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.png" alt="persona1" style="margin-top:2%;margin-bottom:2%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="portfolioModal2" tabindex="-1" role="dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top:1rem;margin-right:2rem">
+            <span aria-hidden="true" style="color:#FFFFFF;opacity:1">&times;</span>
+        </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="modal-body">
+                        <img class="card-img" src="img/portfolio/dsa-pic/ds-persona2.png" alt="persona1" style="margin-top:2%;margin-bottom:2%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <button type="button" class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i></button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-body">
+                            <img class="card-img" src="img/portfolio/dsa-pic/ds-persona1.jpg" alt="persona1">
+                        </div>
+                        <button type="button" class="close btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div-->
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) >
+    <div class="scroll-top page-scroll">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="icon-arrow-down"></i>
+        </a>
+    </div-->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+       var hT = $('#header').offset().top,
+           hH = $('#header').outerHeight()-100,
+           wH = $(window).height(),
+           wS = $(this).scrollTop();
+       if (wS > hH){ 
+           $('#divmenu').fadeIn('slow',function(){$(this).css({'visibility': 'visible'});});
+       }
+           else {$('#divmenu').fadeOut('fast');
+       }
+    });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-91134374-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        $(function() {
+        $('.btn-jump').click (function() {
+        $('html, body').animate({scrollTop: $($(this).attr('href')).offset().top }, 'slow');
+        return false;
+        });
+    });
+    </script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script> 
+
+
+</body>
+
+</html>
