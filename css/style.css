@@ -1,5 +1,5 @@
-p{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:400;line-height:2rem;}
-li{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:400;line-height:2rem;margin-bottom:1rem;margin-left:1rem;}
+p{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;}
+li{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;margin-bottom:1rem;margin-left:1rem;}
 .strong, strong{font-weight:600;color:#323648;}
 strong.sub-title{font-weight:600;color:#323648;}
 body,p,li,h2,h3,h4,a{font-family:'Lato','Open Sans', sans-serif;color:#323648;}
@@ -38,6 +38,10 @@ a:active,
 a.active {
   color:#5e7bf1;
   outline: none;
+  font-weight: 400;
+}
+a.hover{
+    color:#5e7bf1;
 }
 .navbar-custom .navbar-brand{
 	color:black;
@@ -55,17 +59,17 @@ a.active {
   color:#62CBD5;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color:#98DDDE;
+  color:#5e7bf1;
   outline: none;
   background:none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-nav li.active a {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-nav li.active a:hover,
@@ -76,7 +80,7 @@ a.active {
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  color:#98DDDE;
+  color:#5e7bf1;
   background-color:none;
   border-color:none;
 }
@@ -89,7 +93,7 @@ a.active {
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: white;
-  color:#98DDDE;
+  color:#5e7bf1;
   border-color: white;
 }
 .indexheadline{
