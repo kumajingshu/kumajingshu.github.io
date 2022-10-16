@@ -56,7 +56,7 @@ a.hover{
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color:#62CBD5;
+  color:#5e7bf1;
 }
 .navbar-custom .navbar-nav li a:hover {
   color:#5e7bf1;
@@ -75,7 +75,7 @@ a.hover{
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-toggle:hover,

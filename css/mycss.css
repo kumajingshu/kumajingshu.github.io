@@ -28,7 +28,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color:#62CBD5;
+  color:#5e7bf1;
   outline: none;
 }
 .navbar-custom .navbar-brand{
@@ -44,31 +44,31 @@ a.active {
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color:#62CBD5;
+  color:#5e7bf1;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color:#98DDDE;
+  color:#5e7bf1;
   outline: none;
   background:none;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-nav li.active a {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-nav li.active a:hover,
 .navbar-custom .navbar-nav li.active a:focus,
 .navbar-custom .navbar-nav li.active a:active {
-  color:#98DDDE;
+  color:#5e7bf1;
   background:none;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  color:#98DDDE;
+  color:#5e7bf1;
   background-color:none;
   border-color:none;
 }
@@ -81,7 +81,7 @@ a.active {
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
   background-color: white;
-  color:#98DDDE;
+  color:#5e7bf1;
   border-color: white;
 }
 .indexheadline{
@@ -258,7 +258,7 @@ footer{
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #98DDDE;
+  color: #5e7bf1;
   background: white;
   border: solid 2px white;
 }
@@ -273,10 +273,10 @@ margin-top:2%;}
 .contentcontainer p,li{font-size:16px;}
 .contentcontainer h1{font-size:28px;}
 h1, h3{
-  color:#62CBD5;}
+  color:#5e7bf1;}
 
 h2{
-  color:#62CBD5;
+  color:#5e7bf1;
   text-transform:none;
   font-size:30px;
   font-weight:normal;
@@ -304,7 +304,7 @@ iframe{
 font-size:1.2em;
 font-weight:bold;
 font-family:'Open Sans', sans-serif;
-color:#62CBD5;;}
+color:#5e7bf1;;}
 .morediscription{
 font-family:'Open Sans', sans-serif;
 font-size:16px;}
@@ -335,7 +335,7 @@ h4{
 img{margin:auto;}
 .img-circle{border-radius: 50%;}
 .projectdiscription a, a:hover{
-  color:#62CBD5;
+  color:#5e7bf1;
 }
 p.figure{font-size:0.7em;}
 #resume {
@@ -357,7 +357,7 @@ max-width:100%;
 background-attachment: fixed;
 }
 .footername a{
-  color:#62CBD5;
+  color:#5e7bf1;
 }
 .credit a{
   color:#333;
@@ -369,20 +369,20 @@ background-attachment: fixed;
     font-size:8px;
 }
 .resumeimage{
-  border:3px solid #62CBD5;
+  border:3px solid #5e7bf1;
 
 }
 .btn-primary {
     color: #fff;
-    background-color:#62CBD5;
-    border-color:#62CBD5;
+    background-color:#5e7bf1;
+    border-color:#5e7bf1;
     font-size:18px;
     font-weight: 700;
 }
 .btn-primary {
     color: #fff;
     background-color:rgba(98,203,213,0.8);
-    border-color:#62CBD5;
+    border-color:#5e7bf1;
     border-radius:10px;
     font-size:18px;
     font-weight: 700;
@@ -390,11 +390,11 @@ background-attachment: fixed;
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus{
-  background-color: #98DDDE;
-  border-color: #98DDDE;
+  background-color: #5e7bf1;
+  border-color: #5e7bf1;
 }
 .scroll-top .btn {
-  color:#98DDDE;
+  color:#5e7bf1;
   font-size:20px;
   line-height: 28px;
 }
