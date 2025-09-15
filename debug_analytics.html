@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSESNYBQ04"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DSESNYBQ04');
+      
+      // Debug function
+      window.debugGtag = function() {
+        console.log('=== Google Analytics Debug Info ===');
+        console.log('gtag function available:', typeof gtag);
+        console.log('dataLayer:', window.dataLayer);
+        console.log('Google Analytics ID:', 'G-DSESNYBQ04');
+        console.log('Current dataLayer length:', window.dataLayer.length);
+        console.log('================================');
+      };
+      
+      // Test event on page load
+      window.addEventListener('load', function() {
+        console.log('Page loaded, testing gtag...');
+        debugGtag();
+        
+        if (typeof gtag === 'function') {
+          console.log('Sending test event...');
+          gtag('event', 'page_load_test', {
+            'event_category': 'debug',
+            'event_label': 'debug_page_load',
+            'value': 1
+          });
+          console.log('Test event sent!');
+        } else {
+          console.error('gtag function not available!');
+        }
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Analytics Debug Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { 
+            display: block; 
+            margin: 10px 0; 
+            padding: 15px 25px; 
+            background-color: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .test-button:hover { background-color: #0056b3; }
+        .debug-section { 
+            background-color: #f8f9fa; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 5px; 
+            border-left: 4px solid #007bff;
+        }
+        .console-output {
+            background-color: #000;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Google Analytics Debug Test</h1>
+    
+    <div class="debug-section">
+        <h2>Debug Steps:</h2>
+        <ol>
+            <li>Open your browser's Developer Tools (F12)</li>
+            <li>Go to the Console tab</li>
+            <li>Refresh this page and check the console output</li>
+            <li>Click the test buttons below</li>
+            <li>Check if events appear in Google Analytics Debugger</li>
+        </ol>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Test Buttons:</h2>
+        <button class="test-button" onclick="debugGtag();">Debug gtag Function</button>
+        
+        <button class="test-button" onclick="
+            console.log('Manual test event clicked');
+            if(typeof gtag === 'function') {
+                gtag('event', 'manual_test', {
+                    'event_category': 'debug',
+                    'event_label': 'manual_test_button',
+                    'value': 1
+                });
+                console.log('Manual test event sent to GA');
+            } else {
+                console.error('gtag not available!');
+            }
+        ">Send Manual Test Event</button>
+        
+        <button class="test-button" onclick="
+            console.log('Project event test clicked');
+            if(typeof gtag === 'function') {
+                gtag('event', 'hub_click', {
+                    'event_category': 'project_engagement',
+                    'event_label': 'ootb_analytics_hub',
+                    'value': 1
+                });
+                console.log('Project event sent to GA');
+            } else {
+                console.error('gtag not available!');
+            }
+        ">Send Project Event (hub_click)</button>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Common Issues to Check:</h2>
+        <ul>
+            <li><strong>Ad Blockers:</strong> Disable ad blockers as they often block Google Analytics</li>
+            <li><strong>Privacy Settings:</strong> Check if your browser has privacy settings blocking tracking</li>
+            <li><strong>Network Issues:</strong> Check if the gtag.js script is loading (Network tab)</li>
+            <li><strong>Console Errors:</strong> Look for any JavaScript errors in the console</li>
+            <li><strong>GA Debugger:</strong> Make sure Google Analytics Debugger extension is properly installed and enabled</li>
+        </ul>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Expected Console Output:</h2>
+        <div class="console-output">Page loaded, testing gtag...
+=== Google Analytics Debug Info ===
+gtag function available: function
+dataLayer: [Array with gtag events]
+Google Analytics ID: G-DSESNYBQ04
+Current dataLayer length: [number]
+================================
+Sending test event...
+Test event sent!</div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Google Analytics Debugger Setup:</h2>
+        <ol>
+            <li>Install the "Google Analytics Debugger" Chrome extension</li>
+            <li>Enable it by clicking the extension icon</li>
+            <li>Refresh this page</li>
+            <li>Look for "gtag" events in the extension popup</li>
+        </ol>
+    </div>
+</body>
+</html>

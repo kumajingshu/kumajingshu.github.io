@@ -10,6 +10,28 @@
       gtag('js', new Date());
 
       gtag('config', 'G-DSESNYBQ04');
+      
+      // Debug function to check if gtag is working
+      window.debugGtag = function() {
+        console.log('gtag function available:', typeof gtag);
+        console.log('dataLayer:', window.dataLayer);
+        console.log('Google Analytics ID:', 'G-DSESNYBQ04');
+      };
+      
+      // Test event on page load
+      window.addEventListener('load', function() {
+        console.log('Page loaded, testing gtag...');
+        if (typeof gtag === 'function') {
+          console.log('gtag is available, sending test event');
+          gtag('event', 'page_load_test', {
+            'event_category': 'debug',
+            'event_label': 'home_project_page',
+            'value': 1
+          });
+        } else {
+          console.error('gtag function not available!');
+        }
+      });
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -94,22 +116,14 @@
     <section id="portfolio" style="padding-top:32px">
         <div class="container">
         	<div id="content">
-                <div1 class="project-card project-card-horizontal clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968&hide-ui=1" style="background-color:#ebebfe; cursor: pointer;" onclick="gtag('event', 'hub_click', {
-                  'event_category': 'project_engagement',
-                  'event_label': 'ootb_analytics_hub',
-                  'value': 1
-                });">
+                <div1 class="project-card project-card-horizontal clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968&hide-ui=1" style="background-color:#ebebfe; cursor: pointer;" onclick="console.log('Hub card clicked'); if(typeof gtag === 'function') { gtag('event', 'hub_click', { 'event_category': 'project_engagement', 'event_label': 'ootb_analytics_hub', 'value': 1 }); console.log('Hub click event sent to GA'); } else { console.error('gtag not available on hub click'); }">
                     <div class="project-content">
                         <h2 class="project-title">OOTB Analytics Hub</h2>
                         <div class="project-subtitle">Product Strategy & System Thinking</div>
                         <div class="project-description">
                             <p>I brought OOTB Analytics to Amplitude from the ground up, creating a new product area that became a top destination with 30% of organizations (3k+) engaging weekly.</p>
                         </div>
-                        <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968" target="_blank" class="read-more-link" onclick="gtag('event', 'hub_click', {
-                          'event_category': 'project_engagement',
-                          'event_label': 'ootb_analytics_hub',
-                          'value': 1
-                        });">View Project</a>
+                        <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968" target="_blank" class="read-more-link" onclick="console.log('Hub View Project clicked'); if(typeof gtag === 'function') { gtag('event', 'hub_click', { 'event_category': 'project_engagement', 'event_label': 'ootb_analytics_hub', 'value': 1 }); console.log('Hub View Project event sent to GA'); } else { console.error('gtag not available on hub view project click'); }">View Project</a>
                     </div>
                     <div class="project-image">
                         <img class="card-img" src="img/portfolio/featureoverview.png" alt="Amplitude OOTB Analytics Hub Feature Engagement Dashboard">
