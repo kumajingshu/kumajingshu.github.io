@@ -11,7 +11,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:300,300i,400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
     <link rel="shortcut icon" href="img/portfolio/logoimage.png">
@@ -28,8 +28,8 @@
 <body data-spy="scroll" data-target="#navigation" data-offset="5">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light hnav" id="navigation">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="img-logo" src="img/portfolio/logoimage.png">
+            <a class="navbar-brand" href="index_real.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.5rem; color: #333;">
+                JINGSHU
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,16 +38,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Projects<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#portfolio" style="font-family: 'Manrope', sans-serif;">Projects<span class="sr-only">(current)</span></a>
                   </li>
                     <!--li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li-->
                     <li class="nav-item">
-                        <a class="nav-link" href="graphic-design.html">Graphics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                        <a class="nav-link" href="JingshuZhaoresume2025.pdf" style="font-family: 'Manrope', sans-serif;">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -231,7 +228,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footername">
-                        Designed and coded by &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html">Jingshu Zhao</a>&nbsp;&nbsp;</span>&verbar;&nbsp;&nbsp;<a class="strong" href="mailto:jszhao@umich.edu">jszhao@umich.edu</a>
+                        Designed and coded by &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html" style="color:#323658">Jingshu Zhao</a>&nbsp;&nbsp;</span>&verbar;&nbsp;&nbsp;<a href="mailto:jszhao@umich.edu" style="color:#323658">jingshu.zhao@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -243,10 +240,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        consoleText(['Lead Designer','Problem Solver','Strategic Partner'], 'text', ['#333333']);
+        consoleText(['Lead Designer','Problem Solver','Strategic Partner'], 'text', ['#323658']);
 
         function consoleText(words, id, colors) {
-            if (colors === undefined) colors = ['#333333'];
+            if (colors === undefined) colors = ['#323658'];
             var visible = true;
             var con = document.getElementById('console');
             var letterCount = 1;
@@ -315,6 +312,18 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>   
+    <script src="js/freelancer.min.js"></script>
+    
+    <!-- Navbar scroll shadow script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navigation');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

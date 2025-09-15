@@ -11,10 +11,10 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope:300,300i,400,700,400italic,700italic&v=2" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri" rel="stylesheet">
-    <link rel="shortcut icon" href="img/portfolio/logoimage.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Montserrat|Tangerine|Amiri|Raleway:400,500,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="img/portfolio/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -28,8 +28,8 @@
 <body data-spy="scroll" data-target="#navigation" data-offset="5">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light hnav" id="navigation">
         <div class="container">
-            <a class="navbar-brand" href="home_project.html">
-                <img class="img-logo" src="img/portfolio/logoimage.png">
+            <a class="navbar-brand" href="home_project.html" style="font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.5rem; color: #333;">
+                JINGSHU
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,16 +38,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="home_project.html">Projects<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="home_project.html" style="font-family: 'Manrope', sans-serif;">Projects<span class="sr-only">(current)</span></a>
                   </li>
                     <!--li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li-->
                     <li class="nav-item">
-                        <a class="nav-link" href="graphic-design.html">Graphics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume.html">Resume</a>
+                        <a class="nav-link" href="JingshuZhaoresume2025.pdf" style="font-family: 'Manrope', sans-serif;">Resume</a>
                     </li>
                 </ul>
             </div>
@@ -55,12 +52,15 @@
     </nav>
     <header>
         <div class="container">
-            <div class="row align-items-center" style="margin-top:2rem;margin-bottom:1rem">
-                <div class="col-md-10">
-                    <h1 class="display-5" style="text-transform: none"><span style="color:#5E7BF1">Hi, </span><span style="font-weight:500">I am Jingshu Zhao</span></h1>
-                    <h2 class="lead" style="font-size:1.6rem;font-family:'Ubuntu', sans-serif;"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></h2>
-                    <p class="self-intro">Hi, I am a Lead Product Designer currently working at Rivian. I am passionate about solving complex problems as a strategic partner of my product team. As a former journalist, my design philosophy is to help the team make rational decisions with insights from everyone, including users, devs, and PMs.</p>
-                    <!--p>I have designed products from scratch to enable Rivian's capabilities order, transaction, delivery scheduling and assignment.</p-->
+            <div class="row align-items-center" style="margin-bottom:0.5rem">
+                <div class="col-md-10" style="text-align: left;">
+                     <div style="display: flex; align-items: center; gap: 1rem; margin: 0; width: fit-content;">
+                        <img src="img/portfolio/self.png" alt="Jingshu Zhao" style="width: 56px; height: 56px; border-radius: 50%; flex-shrink: 0;margin-bottom:0">
+                        <h1 class="display-5" style="text-transform: none; margin: 0; flex-shrink: 0;">Hi, I am Jingshu Zhao</h1>
+                    </div>
+                    <!--h2 class="lead" style="font-size:1.6rem;font-family:'Ubuntu', sans-serif;"><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></h2-->
+                    <p class="self-intro">I love solving complex problems in enterprise software. I've led 0-1 design and redesigns across data analytics (Amplitude), operations (Rivian), and infrastructure (Facebook/Deloitte), bringing a research-first approach and strong stakeholder-alignment skills from my journalism background.</p>
+                    <!--p>I have designed products from scratch to enable Rivian's capabilities order, transaction, delivery scheduling and assignment. I've led 0-1 design and large redesign initiatives across data analytics (Amplitude), operations (Rivian), and infrastructure platforms (Meta/Deloitte). </p-->
                 </div>
                 <!--div class="col-md-5">
                     <img class="card-img align-bottom" src="img/portfolio/jingshu-vector.png" alt="Card image cap" style="width:75%;vertical-align:bottom;margin:auto;">
@@ -82,116 +82,58 @@
             </a>
         </div-->
     </header>
-    <section id="portfolio" style="padding-top:3%;margin-bottom:5rem">
+    <section id="portfolio" style="padding-top:32px">
         <div class="container">
         	<div id="content">
-                <div1 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="https://www.figma.com/proto/TfNrAJLAYZJCF1MgxTsX1s/Presentation?page-id=13494%3A121943&node-id=13494%3A122153&viewport=301%2C-1228%2C0.59&scaling=scale-down&starting-point-node-id=13494%3A122153" target="_blank">
-                        <div class="caption">
-                            <div class="itemtext_small" style="margin-top: -20px;">
-                                <h5>T2D Delivery Platform</h5>
-                                <p>Appointment Assignment, Routing, and Scheduling<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Design &amp; Research--></p>
-                            </div>
+                <div1 class="project-card project-card-horizontal clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968" style="background-color:#ebebfe; cursor: pointer;">
+                    <div class="project-content">
+                        <h2 class="project-title">OOTB Analytics Hub</h2>
+                        <div class="project-subtitle">Product Strategy & System Thinking</div>
+                        <div class="project-description">
+                            <p>I brought OOTB Analytics to Amplitude from the ground up, creating a new product area that became a top destination with 30% of organizations (3k+) engaging weekly.</p>
                         </div>
-                        <img class="card-img" src="img/portfolio/delivery_platform.png" alt="Card image cap">
-                    </a>   
+                        <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=582%3A967&node-id=582-968&viewport=788%2C378%2C0.09&t=Dpxo7xiowEKgUuC9-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=582%3A968" target="_blank" class="read-more-link">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img class="card-img" src="img/portfolio/feature overview.png" alt="Amplitude OOTB Analytics Hub Feature Engagement Dashboard">
+                    </div>
                 </div1>
-                <div2>
-                    <p>I led the design from scratch for appointment assignment, routing, and scheduling. I informed the XF team's decision making with rich insights from user interviews and testing and also involved Eng team actively.</p> 
-                    <p>The key feature of appointment timeline and assignment has been rolled out to all 29 service centers. Delivery scheduling redesign is being developed now.</p> 
-                    <p><a href="https://www.figma.com/proto/TfNrAJLAYZJCF1MgxTsX1s/Presentation?page-id=13494%3A121943&node-id=13494%3A122153&viewport=301%2C-1228%2C0.59&scaling=scale-down&starting-point-node-id=13494%3A122153" target="_blank">Read More on Figma >></a></p>
-                </div2>
-                <div3 class="graphic intro" style="background-color:#E3E4FF">
-                    <a href="https://www.figma.com/proto/TfNrAJLAYZJCF1MgxTsX1s/Presentation?page-id=13534%3A128938&node-id=13534%3A129302&viewport=921%2C566%2C0.08&scaling=scale-down&starting-point-node-id=13534%3A129302" target="_blank">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>T2D Transaction V2</h5>
-                                <p>Workflow, Info Arch, Payment, Doc Management<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Design &amp; Research--></p>
-                            </div>
+                <div2 class="project-card project-card-horizontal clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=643%3A68218&node-id=643-68219&viewport=197%2C191%2C0.18&t=VI0ioLGTfFiChTRg-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=684%3A77998" style="background-color:#D8F3F1; cursor: pointer;">
+                    <div class="project-content">
+                        <h2 class="project-title">Chart Builder Transformation</h2>
+                        <div class="project-subtitle">Interaction Design & Vibe Coding</div>
+                        <div class="project-description">
+                            <p>I initiated and redesigned Amplitude's Chart Builder for efficiency and simplicity. The modular interface received positive feedback from users and CEO, while AI chat improved task completion by 21%.</p>
                         </div>
-                        <img class="card-img" src="img/portfolio/transaction_V2.png" alt="Card image cap">
-                    </a>   
+                        <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=643%3A68218&node-id=643-68219&viewport=197%2C191%2C0.18&t=VI0ioLGTfFiChTRg-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=684%3A77998" target="_blank" class="read-more-link">View Project</a>
+                    </div>
+                    <div class="project-image">
+                        <img class="card-img" src="img/portfolio/chart builder.png" alt="Chart Builder Transformation Interface">
+                    </div>
+                </div2>
+                <div3 class="project-card clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=1%3A9277&node-id=1-10170&viewport=5695%2C955%2C0.26&t=cVgcAeQv50s0gUk2-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A10170&hide-ui=1" style="background-color:#E1F8FF; cursor: pointer;">
+                    <h2 class="project-title">Delivery Operations Tools</h2>
+                    <!--div class="project-subtitle">Service Operations & Scheduling</div-->
+                    <div class="project-description">
+                        <p>I designed appointment assignment, routing, and scheduling tools from scratch for all 59 Rivian delivery centers.</p>
+                    </div>
+                    <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=1%3A9277&node-id=1-10170&viewport=5695%2C955%2C0.26&t=cVgcAeQv50s0gUk2-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A10170&hide-ui=1" target="_blank" class="read-more-link">View Project</a>
+                    <div class="project-image">
+                        <img class="card-img" src="img/portfolio/t2d_delivery.png" alt="T2D Delivery Platform Interface">
+                    </div>
                 </div3>
-                <div4>
-                    <p>T2D Admin helps Rivian internal users to support customers complete multiple steps (e.g., title reg, payment) which has enabled over 10,000 transactions.
-                    <p>I designed the ecosystem with my junior designer colleague and onboarded new designers to explore new workflows together. I also led the V2 design for payment and doc management to increase the tool's efficiency.</p> 
-                    <p><a href="https://www.figma.com/proto/TfNrAJLAYZJCF1MgxTsX1s/Presentation?page-id=13534%3A128938&node-id=13534%3A129302&viewport=921%2C566%2C0.08&scaling=scale-down&starting-point-node-id=13534%3A129302" target="_blank">Read More on Figma >></a></p>
+                <div4 class="project-card clickable-card" data-figma-url="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=5%3A3428&node-id=16-9724&viewport=694%2C380%2C0.06&t=2zZ3xKiqA77YWZZL-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=16%3A9724&hide-ui=1" style="background-color:#E1F8FF; cursor: pointer;">
+                    <h2 class="project-title">Transaction Platform</h2>
+                    <!--div class="project-subtitle">Workflow Design & Payment Systems</div-->
+                    <div class="project-description">
+                        <p>I designed Rivian's transaction management system to enable tracking and verifying payments and customer information, supporting every vehicle purchase across 100K+ deliveries.</p>
+                    </div>
+                    <a href="https://www.figma.com/proto/nviRayxKJ7vPBDUD33WGYo/Portfolio?page-id=5%3A3428&node-id=16-9724&viewport=694%2C380%2C0.06&t=2zZ3xKiqA77YWZZL-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=16%3A9724&hide-ui=1" target="_blank" class="read-more-link">View Project</a>
+                    <div class="project-image">
+                        <img class="card-img" src="img/portfolio/t2d_transaction.png" alt="T2D Transaction V2 Interface">
+                    </div>
                 </div4>
             </section>
-            <section style="align-items: center;justify-content: center;margin-bottom:-120px">
-                <div style="width: 300px;margin:0 auto;">
-                    <h5 style="text-align: center;">Previous Work</h5>
-                </div>
-            </section>
-            <section id="content2">
-        		<div5 class="graphic intro" style="background-color:#E3E4FF">
-                    <a href="metricplatform.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Metric Tracking Tool</h5>
-                                <p>Infra Metrics Mgmt & Dashboard<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Design &amp; Research--></p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/platformm/metricplatform-index.png" alt="Card image cap">
-                    </a>   
-                </div5>
-                <div6 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="2ndbrain.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>2ndBrain</h5>
-                                <p>Medication Adherence</p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/2ndbrain2.png" alt="Card image cap">
-                    </a>
-                </div6>
-                <!--div3 class="graphic intro" style="background-color:#E3E4FF">
-                    <a href="DCM.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>DCM Data Viz and Website</h5>
-                                <p>Data Visualization&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Website<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Design &amp; Research--><!--/p>
-                            </div-->
-                        <!--/div>
-                        <img class="card-img" src="img/portfolio/dcm/dcm_home.png" alt="Card image cap">
-                    </a>   
-                </div3-->     
-                <!--div4 class="graphic intro" style="background-color:#E4F8FF">
-                    <a href="amesite.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Amesite</h5>
-                                <p>Social Learning&nbsp;&nbsp;&verbar;&nbsp;&nbsp;Mobile App<!--&nbsp;&nbsp;&verbar;&nbsp;&nbsp; Product Design--><!--/p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/amesite2.png" alt="Card image cap">
-                    </a>
-                </div4-->          
-                <div7 class="graphic intro" style="background-color:#FFDDE4">
-                    <a href="allergybot.html">
-                        <div class="caption">
-                            <div class="itemtext_small">
-                                <h5>Allergy Bot</h5>
-                                <p>Chatbot&nbsp;&nbsp;&verbar;&nbsp;&nbsp;CHI Finalist</p>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/ab2.png" alt="Card image cap">
-                    </a>   
-                </div7>
-                <!--div6 class="graphic intro" style="background-color:#FCF6DE">
-                    <a href="graphic-design.html" class="portfolio-link">
-                        <div class="caption" style="top:8%">
-                            <div class="itemtext_small">
-                                <h5>Graphic Design</h5>
-                            </div>
-                        </div>
-                        <img class="card-img" src="img/portfolio/graphic2.png" alt="Card image cap">
-                    </a>
-                </div6-->
-        	</div>
-        </div>
-    </section>
     <!--section id="about" class="secbg" style="background-color:#f8faff">
         <div class="container">
             <div class="row">
@@ -230,7 +172,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 footername">
-                        Designed and coded by &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html">Jingshu Zhao</a>&nbsp;&nbsp;</span>&verbar;&nbsp;&nbsp;<a class="strong" href="mailto:jszhao@umich.edu">jszhao@umich.edu</a>
+                        Designed and coded by &copy; <span class="strong" style="text-transform:uppercase"><a href="index.html" style="color:#323658">Jingshu Zhao</a>&nbsp;&nbsp;</span>&verbar;&nbsp;&nbsp;<a href="mailto:jszhao@umich.edu" style="color:#323658">jingshu.zhao@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -242,10 +184,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script>
-        consoleText(['Lead Designer','Problem Solver','Strategic Partner'], 'text', ['#333333']);
+        consoleText(['Lead Designer','Problem Solver','Strategic Partner'], 'text', ['#323658']);
 
         function consoleText(words, id, colors) {
-            if (colors === undefined) colors = ['#333333'];
+            if (colors === undefined) colors = ['#323658'];
             var visible = true;
             var con = document.getElementById('console');
             var letterCount = 1;
@@ -314,6 +256,39 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>   
+    <script src="js/freelancer.min.js"></script>
+    
+    <!-- Navbar scroll shadow script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navigation');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+    <!-- Clickable cards script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableCards = document.querySelectorAll('.clickable-card');
+            
+            clickableCards.forEach(function(card) {
+                card.addEventListener('click', function(e) {
+                    // Don't trigger if clicking on the "View Project" link
+                    if (e.target.classList.contains('read-more-link') || e.target.closest('.read-more-link')) {
+                        return;
+                    }
+                    
+                    const figmaUrl = card.getAttribute('data-figma-url');
+                    if (figmaUrl) {
+                        window.open(figmaUrl, '_blank');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

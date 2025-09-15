@@ -1,20 +1,66 @@
+html {
+  font-size: 16px;
+}
+
+/* Remove default navbar shadow and add scroll-based shadow */
+.hnav {
+  box-shadow: none !important;
+  transition: box-shadow 0.3s ease;
+}
+
+.hnav.scrolled {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Clickable card styling */
+.clickable-card {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clickable-card:hover {
+  transform: translateY(-2px);
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Force left alignment for header content */
+header .col-md-10 {
+  text-align: left !important;
+}
+
+header .col-md-10 > div {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  margin-bottom: 0 !important;
+  justify-content: flex-start !important;
+}
+
+header .display-5 {
+  margin: 0 !important;
+  text-align: left !important;
+  line-height: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  transform: translateY(2px) !important;
+}
+
 #content{
             grid-template-columns:repeat(3,1fr);
             /*Create a 6 columns*/
             grid-auto-rows:minmax(240px,auto);
             grid-gap:30px;
             display:grid;
-            max-width:980px;
+            max-width:1200px;
             margin:0 auto;
             grid-template-areas:
                 "div1 div1 div1"
                 "div2 div2 div2"
                 "div3 div3 div3"
                 "div4 div4 div4"
-                "div8 div8 div8"
-                "div5 div5 div5"
-                "div6 div6 div6"
-                "div7 div7 div7"
             }
 #content2{
             grid-template-columns:repeat(3,1fr);
@@ -30,7 +76,10 @@
                 "div7 div7 div7"
             }
 .card-img{
-  border-radius:.5rem;
+  border-radius: 0;
+  width: 100%;
+  margin: 0;
+  display: block;
 }
 
 @media screen and (min-width:900px){
@@ -40,10 +89,11 @@
     grid-auto-rows:minmax(300px,auto);
     grid-gap:30px;
     display:grid;
-    max-width:980px;
+    max-width:1200px;
     margin:0 auto;
     grid-template-areas:
-        "div1 div1 div1 div2 div2 div2"
+        "div1 div1 div1 div1 div1 div1"
+        "div2 div2 div2 div2 div2 div2"
         "div3 div3 div3 div4 div4 div4";
     }
     .self-intro{
@@ -85,26 +135,8 @@ div6{
 div7{
     grid-area:div7;
 }
-#content div1{
-    padding:1%;
-}
- #content div2{
-    padding:1%;
-}
- #content div3{
-    padding:1%;
-}
- #content div4{
-    padding:1%;
-}
- #content div5{
-    padding:1%;
-}
- #content div6{
-    padding:1%;
-}
- #content div7{
-    padding:1%;
+div8{
+    grid-area:div8;
 }
 .intro{
   background-color:transparent;
@@ -115,6 +147,7 @@ div7{
   display: block;
   padding:20px;
   border-radius:.5rem;
+  padding-top: 24px;
 }
 .caption {  
   position: absolute;
@@ -147,7 +180,7 @@ div7{
   height: 20px;
   text-align: left;
   left: 8%;
-  top:78%;
+  bottom: 24px;
   margin-top: -10px;}
 @media screen and (max-width:599px){
     .caption .itemtext {
@@ -160,6 +193,164 @@ div7{
     }
   }
   .self-intro{
-    font-size:1.2rem;
+    font-size:18px !important;
+    font-family: 'Manrope', sans-serif !important;
     margin-top:2rem;
+  }
+  .pill-container {
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    background-color: #C2C4CA;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    white-space: nowrap;
+    height: 24px;
+    line-height: 16px;
+  }
+  
+  .project-card {
+    padding: 32px 32px 0 32px;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .project-year {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .project-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #333;
+  }
+  
+  .project-subtitle {
+    font-size: 0.875rem;
+    color: #323648;
+    margin-bottom: 16px;
+    font-weight: 400;
+  }
+  
+  .project-description {
+    margin-bottom: 24px;
+    flex-grow: 1;
+  }
+  
+  .project-description p {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  
+  .read-more-link {
+    color: #333 !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 24px;
+    display: inline-block;
+    transition: text-decoration 0.2s ease;
+  }
+
+  .read-more-link:hover {
+    color: #333 !important;
+    text-decoration: underline;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .project-image {
+    margin-top: auto;
+  }
+  
+  .project-image .card-img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.1), -4px 0 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Horizontal layout for Amplitude projects */
+  .project-card-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0 0 2rem;
+    overflow: hidden;
+    position: relative;
+    height: 480px;
+  }
+
+  .project-card-horizontal .project-content {
+    flex: 0 0 40%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  .project-card-horizontal .project-image {
+    flex: 1;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project-card-horizontal .project-image .card-img {
+    width: 100%;
+    height: calc(100% - 24px);
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translate(10%, 24px);
+  }
+
+  .project-card-horizontal .read-more-link {
+    align-self: flex-start;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .project-card-horizontal {
+      flex-direction: column;
+      text-align: left;
+      gap: 1rem;
+      padding: 1.5rem;
+    }
+    
+    .project-card-horizontal .project-content {
+      flex: none;
+      max-width: 100%;
+      width: 100%;
+    }
+    
+    .project-card-horizontal .project-image {
+      flex: none;
+      width: 100%;
+      height: 250px;
+    }
+    
+    .project-card-horizontal .project-image .card-img {
+      width: 100%;
+      height: 100%;
+      transform: none;
+      object-fit: cover;
+    }
   }

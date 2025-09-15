@@ -1,8 +1,8 @@
-p{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;}
-li{font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;margin-bottom:1rem;margin-left:1rem;}
+p{font-family:'Manrope','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;}
+li{font-family:'Manrope','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;line-height:2rem;margin-bottom:1rem;margin-left:1rem;}
 .strong, strong{font-weight:600;color:#323648;}
 strong.sub-title{font-weight:600;color:#323648;}
-body,p,li,h2,h3,h4,a{font-family:'Lato','Open Sans', sans-serif;color:#323648;}
+body,p,li,h2,h3,h4,a{font-family:'Manrope','Open Sans', sans-serif;color:#323648;}
 .img-logo{
   float: left;
   width: 40px;
@@ -240,7 +240,7 @@ footer .footer-above a{
 footer .footername{
 	color:#333333;
   text-transform:none;
-  font-family:'Lato','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;
+  font-family:'Manrope','Open Sans', sans-serif;font-size:1.125rem;font-weight:300;
 }
 footer{
 	text-transform: uppercase;
@@ -288,7 +288,7 @@ color:#323648;
 font-weight:800;}
 h3{
   margin-bottom: 2rem;
-  font-family:'Lato','Open Sans', sans-serif;
+  font-family:'Manrope','Open Sans', sans-serif;
   text-align:center;
   font-size:2em;
 }
@@ -335,7 +335,7 @@ font-size:16px;}
 .portfolio-modal .modal-content h2{height:2.5em;}
 h4,h5{
   text-transform: none;
-  font-family:'Lato','Open Sans', sans-serif;
+  font-family:'Manrope','Open Sans', sans-serif;
   color:#323648;
   margin-top:1rem;
   margin-bottom:1rem;
@@ -792,7 +792,7 @@ h1{font-family: 'Ubuntu', sans-serif;font-weight:700;line-height:1.2;}
 h1.projectname_page{text-transform: none}
 header h2{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:300;}
 h2.projectintro{
-  font-family:'Lato',sans-serif;font-size:1.3rem;color:#333333;font-weight:600;margin-top:0rem;margin-bottom:0rem;line-height:2rem;
+  font-family:'Manrope',sans-serif;font-size:1.3rem;color:#333333;font-weight:600;margin-top:0rem;margin-bottom:0rem;line-height:2rem;
 }
 .display-4{font-family: 'Ubuntu', sans-serif;color:#fff;font-weight:700;}
 header.bg-header{
@@ -918,7 +918,7 @@ button{
   transform-origin: top left;
 }
 .projectname_page{
-  font-family:'Lato', sans-serif;
+  font-family:'Manrope', sans-serif;
   font-weight:900;
   color:rgba(0,0,0,.90);
 }
