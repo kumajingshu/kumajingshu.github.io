@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSESNYBQ04"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DSESNYBQ04');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Analytics Event Tracking Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { 
+            display: block; 
+            margin: 10px 0; 
+            padding: 10px 20px; 
+            background-color: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            cursor: pointer;
+        }
+        .test-button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Google Analytics Event Tracking Test</h1>
+    <p>Click the buttons below to test the event tracking. Check your browser's developer console (F12) to see the events being sent to Google Analytics.</p>
+    
+    <button class="test-button" onclick="gtag('event', 'hub_click', {
+        'event_category': 'project_engagement',
+        'event_label': 'ootb_analytics_hub',
+        'value': 1
+    }); console.log('hub_click event sent');">Test Hub Click</button>
+    
+    <button class="test-button" onclick="gtag('event', 'chart_click', {
+        'event_category': 'project_engagement',
+        'event_label': 'chart_builder_transformation',
+        'value': 1
+    }); console.log('chart_click event sent');">Test Chart Click</button>
+    
+    <button class="test-button" onclick="gtag('event', 'delivery_click', {
+        'event_category': 'project_engagement',
+        'event_label': 'delivery_operations_tools',
+        'value': 1
+    }); console.log('delivery_click event sent');">Test Delivery Click</button>
+    
+    <button class="test-button" onclick="gtag('event', 'transaction_click', {
+        'event_category': 'project_engagement',
+        'event_label': 'transaction_platform',
+        'value': 1
+    }); console.log('transaction_click event sent');">Test Transaction Click</button>
+    
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Open your browser's Developer Tools (F12)</li>
+        <li>Go to the Console tab</li>
+        <li>Click each button above</li>
+        <li>You should see console messages confirming the events were sent</li>
+        <li>Check the Network tab to see the requests being sent to Google Analytics</li>
+    </ol>
+    
+    <h2>Event Details:</h2>
+    <ul>
+        <li><strong>hub_click</strong> - Tracks clicks on the OOTB Analytics Hub project (both card and View Project button)</li>
+        <li><strong>chart_click</strong> - Tracks clicks on the Chart Builder Transformation project (both card and View Project button)</li>
+        <li><strong>delivery_click</strong> - Tracks clicks on the Delivery Operations Tools project (both card and View Project button)</li>
+        <li><strong>transaction_click</strong> - Tracks clicks on the Transaction Platform project (both card and View Project button)</li>
+    </ul>
+    
+    <h3>Event Labels:</h3>
+    <ul>
+        <li><strong>All clicks (card + button):</strong> ootb_analytics_hub, chart_builder_transformation, delivery_operations_tools, transaction_platform</li>
+        <li><strong>Note:</strong> Both card clicks and "View Project" button clicks use the same event labels for consistent tracking</li>
+    </ul>
+    
+    <p><strong>Note:</strong> All events are categorized under 'project_engagement' and have a value of 1 for easy tracking in Google Analytics.</p>
+</body>
+</html>
